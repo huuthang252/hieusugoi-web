@@ -1,0 +1,212 @@
+PHASE 1 — Chuẩn bị môi trường
+1. Cài Node.js
+
+Tải:
+Node.js Official Website
+
+Chọn:
+
+LTS version
+
+Sau khi cài xong:
+
+Mở CMD:
+
+node -v
+
+và:
+
+npm -v
+
+Nếu hiện version là OK.
+
+PHASE 2 — Tạo project Hieusugoi Web
+
+Mở CMD tại nơi muốn lưu project.
+
+Ví dụ:
+
+cd Desktop
+
+Sau đó chạy:
+
+npx create-next-app@latest hieusugoi-web
+3. Khi hệ thống hỏi
+
+Chọn:
+
+TypeScript? → Yes
+ESLint? → Yes
+Tailwind CSS? → Yes
+src/ directory? → Yes
+App Router? → Yes
+Turbopack? → Yes
+Customize import alias? → No
+4. Đi vào project
+cd hieusugoi-web
+5. Chạy thử web
+npm run dev
+
+Sau đó mở:
+
+http://localhost:3000
+
+Nếu thấy trang Next.js là thành công.
+
+
+PHASE 3 — Cài Framer Motion
+
+Trong CMD:
+
+npm install framer-motion
+PHASE 4 — Xóa giao diện mặc định
+
+Mở project bằng:
+
+Visual Studio Code
+6. Mở file
+hieusugoi-web/app/page.tsx
+
+
+
+Đưa local lên Website
+Bây giờ bạn đã có:
+
+project Next.js
+website chạy local bằng localhost:3000
+
+Bước tiếp theo để đưa lên:
+
+hieusugoi.com
+
+là:
+
+Deploy lên internet
+Cách nhanh và đúng nhất hiện tại
+Dùng:
+Vercel
+
+Vì:
+
+sinh ra cho Next.js
+cực dễ
+free
+deploy cực nhanh
+tự kết nối domain
+QUY TRÌNH NGẮN GỌN
+Bước 1
+
+Đưa source code lên GitHub
+
+Bước 2
+
+Kết nối GitHub với Vercel
+
+Bước 3
+
+Kết nối domain:
+
+hieusugoi.com
+CHI TIẾT
+STEP 1
+Tạo GitHub Repository
+
+Vào:
+
+GitHub
+
+Tạo repository:
+
+hieusugoi-web
+STEP 2
+Upload project lên GitHub
+
+Mở terminal trong thư mục:
+
+hieusugoi-web
+Chạy:
+git init
+git add .
+git commit -m "first deploy"
+Sau đó:
+git branch -M main
+Thay YOURNAME bằng github của bạn:
+git remote add origin https://github.com/YOURNAME/hieusugoi-web.git
+Push:
+git push -u origin main
+STEP 3
+Deploy bằng Vercel
+
+Vào:
+
+Vercel Dashboard
+
+Chọn:
+Add New Project
+Chọn repo:
+hieusugoi-web
+Bấm:
+Deploy
+Sau khoảng 1 phút
+
+Bạn sẽ có link kiểu:
+
+https://hieusugoi-web.vercel.app
+STEP 4
+Gắn domain hieusugoi.com
+
+Trong Vercel:
+
+Project
+→ Settings
+→ Domains
+Add:
+hieusugoi.com
+Sau đó
+
+Vercel sẽ hiện:
+
+DNS records cần thêm.
+STEP 5
+Vào nơi mua domain
+
+Ví dụ:
+
+Namecheap
+Xserver
+Cloudflare
+お名前.com
+Thêm DNS
+
+Thường sẽ là:
+
+A Record
+76.76.21.21
+
+hoặc:
+
+CNAME
+cname.vercel-dns.com
+Sau 5~30 phút
+
+Website sẽ chạy tại:
+
+https://hieusugoi.com
+Điều rất mạnh của flow này
+
+Sau này bạn chỉ cần:
+
+git push
+
+là website tự update.
+
+Tức là workflow tương lai sẽ là:
+Code
+↓
+Save
+↓
+git push
+↓
+Website tự update
+
+
