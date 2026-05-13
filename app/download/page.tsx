@@ -32,9 +32,14 @@ export default async function DownloadPage() {
           AI OCR Translation Overlay for Windows
         </p>
 
-        <button className="rounded-full bg-cyan-300 px-10 py-4 text-lg font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.4)]">
+        <a
+          href="https://github.com/huuthang252/hieusugoi-web/releases/download/v1.0.6/Hieusugoi_Setup_v1.0.6.exe"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block rounded-full bg-cyan-300 px-10 py-4 text-lg font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.4)] transition hover:scale-105 hover:shadow-[0_0_40px_rgba(64,233,255,0.6)]"
+        >
           Download for Windows
-        </button>
+        </a>
 
       </div>
     </main>
