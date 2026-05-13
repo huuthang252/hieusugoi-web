@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { createBrowserClient } from "@/lib/supabase-browser";
 
 const menuItems = [
   { label: "Home", href: "/" },
@@ -16,8 +17,29 @@ const menuItems = [
 export default function TopMenu() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const [userEmail, setUserEmail] = useState<string | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    let mounted = true;
+    const supabase = createBrowserClient();
+
+    supabase.auth.getSession().then(({ data }) => {
+      if (!mounted) return;
+      setUserEmail(data.session?.user.email ?? null);
+    });
+
+    const { data: listener } = supabase.auth.onAuthStateChange((_, session) => {
+      if (!mounted) return;
+      setUserEmail(session?.user?.email ?? null);
+    });
+
+    return () => {
+      mounted = false;
+      listener.subscription.unsubscribe();
+    };
+  }, []);
 
   // Close mobile menu when clicking outside
   useEffect(() => {
@@ -56,6 +78,61 @@ export default function TopMenu() {
     }
   }, [open]);
 
+  const handleSignOut = async () => {
+    const supabase = createBrowserClient();
+    await supabase.auth.signOut();
+    setUserEmail(null);
+    window.location.href = "/";
+  };
+
+  const renderAuthButtons = (isMobile = false) => {
+    const baseClass = isMobile
+      ? "rounded-2xl px-4 py-3 font-semibold transition-all duration-300 text-slate-300 hover:bg-white/10 hover:text-white"
+      : "rounded-full px-4 py-2 text-sm font-semibold transition-all duration-300 text-slate-300 hover:text-white hover:bg-white/10";
+
+    if (userEmail) {
+      return (
+        <>
+          <Link
+            href="/account"
+            onClick={isMobile ? closeMenu : undefined}
+            className={baseClass}
+          >
+            Account
+          </Link>
+          <button
+            onClick={() => {
+              handleSignOut();
+              if (isMobile) closeMenu();
+            }}
+            className={`${baseClass} bg-white/5 hover:bg-white/15`}
+          >
+            Sign out
+          </button>
+        </>
+      );
+    }
+
+    return (
+      <>
+        <Link
+          href="/login"
+          onClick={isMobile ? closeMenu : undefined}
+          className={baseClass}
+        >
+          Login
+        </Link>
+        <Link
+          href="/register"
+          onClick={isMobile ? closeMenu : undefined}
+          className={`${baseClass} bg-cyan-300/10 text-cyan-100 hover:bg-cyan-300/20 hover:text-cyan-50`}
+        >
+          Register
+        </Link>
+      </>
+    );
+  };
+
   const closeMenu = () => setOpen(false);
 
   return (
@@ -91,6 +168,7 @@ export default function TopMenu() {
               </Link>
             );
           })}
+          {renderAuthButtons()}
         </div>
 
         {/* Mobile Button */}
@@ -141,6 +219,7 @@ export default function TopMenu() {
                   </Link>
                 );
               })}
+              {renderAuthButtons(true)}
             </div>
           </motion.div>
         )}
