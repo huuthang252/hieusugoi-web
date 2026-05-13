@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { createClient } from "@supabase/supabase-js";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
@@ -87,22 +88,32 @@ const getAccessToken = async (request: Request) => {
 };
 
 const fetchSupabaseUser = async (accessToken: string): Promise<AuthUser | null> => {
-  const response = await fetch(`${supabaseUrl}/auth/v1/user`, {
-    headers: {
-      Authorization: `Bearer ${accessToken}`,
-      apikey: supabaseServiceRoleKey,
-      Accept: "application/json",
-    },
-  });
+  console.log("DEBUG: Token received, validating with Supabase auth.getUser()");
+  
+  const supabase = createClient(supabaseUrl, supabaseServiceRoleKey);
 
-  console.log("Supabase auth response status:", response.status);
+  const {
+    data: { user },
+    error,
+  } = await supabase.auth.getUser(accessToken);
 
-  if (!response.ok) {
+  if (error) {
+    console.log("DEBUG: Supabase auth validation error:", error.message);
     return null;
   }
 
-  const data = (await response.json()) as AuthUser | { message?: string };
-  return (data as AuthUser).id ? (data as AuthUser) : null;
+  if (!user) {
+    console.log("DEBUG: Supabase auth.getUser() returned null user");
+    return null;
+  }
+
+  console.log("DEBUG: Supabase auth validation success, user ID:", user.id);
+
+  return {
+    id: user.id,
+    email: user.email || "",
+    user_metadata: user.user_metadata as { username?: string } | undefined,
+  };
 };
 
 const fetchSingleRecord = async <T>(table: string, userId: string, accessToken: string): Promise<T | null> => {
@@ -141,52 +152,62 @@ export async function GET(request: Request) {
 }
 
 const validate = async (request: Request) => {
-  console.log("Authorization header exists:", !!request.headers.get("authorization"));
+  console.log("DEBUG: Authorization header exists:", !!request.headers.get("authorization"));
   const accessToken = await getAccessToken(request);
-  console.log("Token extraction succeeded:", !!accessToken);
+  console.log("DEBUG: Token extraction succeeded:", !!accessToken);
   if (!accessToken) {
+    console.log("DEBUG: Validation failed - no token provided");
     return createErrorResponse("invalid_token");
   }
 
   const user = await fetchSupabaseUser(accessToken);
   if (!user || !user.id || !user.email) {
+    console.log("DEBUG: Validation failed - invalid token or user not found");
     return createErrorResponse("invalid_token");
   }
 
   const profile = await fetchSingleRecord<ApiProfile>("profiles", user.id, accessToken);
   if (!profile) {
+    console.log("DEBUG: Validation failed - profile not found for user:", user.id);
     return createErrorResponse("inactive_account");
   }
 
   if (profile.status === "banned") {
+    console.log("DEBUG: Validation failed - user banned:", user.id);
     return createErrorResponse("banned");
   }
 
   if (profile.status !== "active") {
+    console.log("DEBUG: Validation failed - profile not active:", user.id);
     return createErrorResponse("inactive_account");
   }
 
   const license = await fetchSingleRecord<ApiLicense>("licenses", user.id, accessToken);
   if (!license) {
+    console.log("DEBUG: Validation failed - no license for user:", user.id);
     return createErrorResponse("no_license");
   }
 
   if (license.status === "banned") {
+    console.log("DEBUG: Validation failed - license banned for user:", user.id);
     return createErrorResponse("banned");
   }
 
   if (!["active", "trial"].includes(license.status)) {
+    console.log("DEBUG: Validation failed - license not active for user:", user.id);
     return createErrorResponse("inactive_account");
   }
 
   if (license.status === "trial") {
     const trialEnd = new Date(license.trial_end || "");
     if (Number.isNaN(trialEnd.getTime()) || trialEnd < new Date()) {
+      console.log("DEBUG: Validation failed - trial expired for user:", user.id);
       return createErrorResponse("trial_expired");
     }
   }
 
   const serverDate = new Date().toISOString().slice(0, 10);
+  console.log("DEBUG: Validation success for user:", user.id);
 
   return NextResponse.json({
     success: true,
