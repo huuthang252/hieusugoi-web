@@ -1,11 +1,18 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@supabase/supabase-js";
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseUrl =
+  process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
+
+const supabaseAnonKey =
+  process.env.SUPABASE_ANON_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
 const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-if (!supabaseUrl || !supabaseServiceRoleKey) {
-  throw new Error("NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY must be set.");
+if (!supabaseUrl || !supabaseAnonKey || !supabaseServiceRoleKey) {
+  throw new Error(
+    "SUPABASE_URL, SUPABASE_ANON_KEY, and SUPABASE_SERVICE_ROLE_KEY must be set."
+  );
 }
 
 type AuthUser = {
@@ -88,17 +95,27 @@ const getAccessToken = async (request: Request) => {
 };
 
 const fetchSupabaseUser = async (accessToken: string): Promise<AuthUser | null> => {
-  console.log("DEBUG: Token received, validating with Supabase auth.getUser()");
-  
-  const supabase = createClient(supabaseUrl, supabaseServiceRoleKey);
+  console.log("DEBUG: Token received, validating with user-scoped Supabase client");
+
+  const userSupabase = createClient(supabaseUrl, supabaseAnonKey, {
+    global: {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    },
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+    },
+  });
 
   const {
     data: { user },
     error,
-  } = await supabase.auth.getUser(accessToken);
+  } = await userSupabase.auth.getUser();
 
   if (error) {
-    console.log("DEBUG: Supabase auth validation error:", error.message);
+    console.log("DEBUG: Supabase user validation error:", error.message);
     return null;
   }
 
