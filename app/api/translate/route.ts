@@ -46,7 +46,7 @@ return NextResponse.json({
     
 
     return NextResponse.json({
-      result: response.output_text,
+      result: response.choices[0].message.content,
     });
 
   } catch (error) {
