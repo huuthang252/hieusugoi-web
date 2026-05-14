@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"; // Xem số người truy cập trang website từ vercel.com
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopMenu from "@/components/TopMenu";
@@ -33,6 +34,7 @@ export default function RootLayout({
         <TopMenu />
 
         {children}
+        <Analytics />
 
       </body>
     </html>
