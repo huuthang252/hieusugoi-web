@@ -117,9 +117,14 @@ export default function HeroSection() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
-              <button className="rounded-full bg-cyan-300 px-7 py-3 font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.45)] transition hover:scale-105">
+              <a
+                href="https://github.com/huuthang252/hieusugoi-web/releases/download/v1.0.7/Hieusugoi_Setup_v1.0.7.exe"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-cyan-300 px-7 py-3 font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.45)] transition hover:scale-105 inline-block"
+              >
                 Download for Windows
-              </button>
+              </a>
 
               <button className="rounded-full border border-white/20 bg-white/10 px-7 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/20">
                 Watch Demo
