@@ -17,23 +17,36 @@ export async function POST(req: Request) {
         { status: 400 }
       );
     }
+    const response = await client.chat.completions.create({
+  model: "gpt-4.1-mini",
+  messages: [
+    {
+      role: "system",
+      content: `
+Bạn là engine dịch thuật.
 
-    const response = await client.responses.create({
-      model: "gpt-4.1-mini",
-      input: [
-        {
-          role: "system",
-          content: "Translate Japanese text into Vietnamese."
-        },
-        {
-          role: "user",
-          content: text
-        }
-      ]
-    });
+QUY TẮC:
+- Chỉ trả về bản dịch tiếng Việt.
+- Không giải thích.
+- Không trò chuyện.
+- Không hỏi lại.
+- Không thêm ghi chú.
+`
+    },
+    {
+      role: "user",
+      content: text
+    }
+  ]
+});
+
+return NextResponse.json({
+  result: response.choices[0].message.content,
+});
+    
 
     return NextResponse.json({
-      result: response.output_text
+      result: response.output_text,
     });
 
   } catch (error) {
