@@ -118,7 +118,7 @@ export default function HeroSection() {
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="https://github.com/huuthang252/hieusugoi-web/releases/download/v1.0.7/Hieusugoi_Setup_v1.0.7.exe"
+                href="https://www.hieusugoi.com/download"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-full bg-cyan-300 px-7 py-3 font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.45)] transition hover:scale-105 inline-block"
