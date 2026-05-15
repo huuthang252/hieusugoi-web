@@ -3,6 +3,7 @@ import { Analytics } from "@vercel/analytics/react"; // Xem số người truy c
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import TopMenu from "@/components/TopMenu";
+import { LanguageProvider } from "@/components/LanguageProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,12 +31,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-[#07111f] text-white">
-        
-        <TopMenu />
-
-        {children}
+        <LanguageProvider>
+          <TopMenu />
+          {children}
+        </LanguageProvider>
         <Analytics />
-
       </body>
     </html>
   );

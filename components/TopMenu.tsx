@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { createBrowserClient } from "@/lib/supabase-browser";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const menuItems = [
   { label: "Home", href: "/" },
@@ -135,15 +136,58 @@ export default function TopMenu() {
 
   const closeMenu = () => setOpen(false);
 
+  const { lang, languages, dropdownOpen, toggleDropdown, selectLanguage } = useLanguage();
+
   return (
     <header className="fixed left-0 top-0 z-50 w-full px-6 pt-4">
       <nav className="mx-auto flex max-w-5xl items-center justify-between rounded-full border border-white/15 bg-white/8 px-6 py-3 text-white shadow-[0_0_35px_rgba(64,233,255,0.12)] backdrop-blur-xl transition-all duration-300">
-        <Link
-          href="/"
-          className="text-xl font-bold text-cyan-300 transition-all duration-300 hover:text-cyan-200 hover:shadow-[0_0_20px_rgba(64,233,255,0.6)]"
-        >
-          Hieusugoi
-        </Link>
+        <div className="flex items-center gap-3">
+          <Link
+            href="/"
+            className="text-xl font-bold text-cyan-300 transition-all duration-300 hover:text-cyan-200 hover:shadow-[0_0_20px_rgba(64,233,255,0.6)]"
+          >
+            Hieusugoi
+          </Link>
+
+          <div className="relative">
+            <button
+              type="button"
+              onClick={toggleDropdown}
+              className="relative flex h-12 w-12 items-center justify-center rounded-full bg-cyan-300/20 text-white shadow-[0_0_20px_rgba(64,233,255,0.35)] transition-all duration-300 hover:scale-105"
+            >
+              <img
+                src={lang.flag}
+                alt={lang.code}
+                className="h-6 w-6 rounded-full object-cover"
+              />
+              <span className="absolute inset-0 rounded-full ring-2 ring-cyan-300/50 opacity-0 transition-opacity duration-300 hover:opacity-100" />
+            </button>
+
+            {dropdownOpen && (
+              <div className="absolute left-0 top-full z-50 mt-2 min-w-[180px] overflow-hidden rounded-3xl border border-cyan-300/25 bg-[#04101f] p-2 shadow-[0_0_30px_rgba(64,233,255,0.18)]">
+                {languages.map((item, index) => (
+                  <button
+                    key={item.code}
+                    type="button"
+                    onClick={() => selectLanguage(index)}
+                    className={`flex w-full items-center gap-3 rounded-2xl px-4 py-3 text-left transition-all duration-200 ${
+                      lang.code === item.code
+                        ? "bg-cyan-300/20 text-cyan-100"
+                        : "text-slate-200 hover:bg-white/10"
+                    }`}
+                  >
+                    <img
+                      src={item.flag}
+                      alt={item.label}
+                      className="h-6 w-6 rounded-full object-cover"
+                    />
+                    <span className="text-sm font-medium">{item.label}</span>
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
 
         {/* Desktop Menu */}
         <div className="hidden items-center gap-2 md:flex">
