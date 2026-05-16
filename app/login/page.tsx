@@ -42,8 +42,8 @@ export default function LoginPage() {
   return (
     <main className="page-bg page-enter px-8 py-28 text-white">
       <div className="mx-auto max-w-3xl rounded-3xl border border-white/15 bg-white/5 p-10 shadow-[0_0_35px_rgba(64,233,255,0.12)] backdrop-blur-xl">
-        <h1 className="mb-4 text-4xl font-bold text-cyan-300">Welcome back</h1>
-        <p className="mb-8 text-slate-300">Sign in to access downloads and manage your account.</p>
+        <h1 className="mb-4 text-4xl font-bold text-cyan-300">Chào mừng bạn đã tới Hieusugoi</h1>
+        <p className="mb-8 text-slate-300">Hãy đăng ký tài khoản để có thể tải bản mới nhất của hieusugoi.</p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <label className="block space-y-2 text-sm text-slate-100">
