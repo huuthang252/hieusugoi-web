@@ -10,18 +10,16 @@ export default function AboutPage() {
         <div className="space-y-6 text-lg leading-8 text-slate-300">
 
           <p>
-            Hieusugoi is an AI OCR Translation Overlay designed to help
-            users read Japanese and English naturally on their screen.
+            Hieusugoi là một lớp phủ dịch OCR bằng AI được thiết kế để giúp người dùng đọc tiếng Nhật và tiếng Anh một cách tự nhiên ngay trên màn hình của họ.
           </p>
 
           <p>
-            Instead of copy-paste translation workflows, Hieusugoi works
-            directly inside real-world content.
+          Thay vì quy trình dịch bằng cách copy-paste, Hieusugoi hoạt động trực tiếp bên trong nội dung thực tế.
           </p>
 
           <p>
-            The goal is to create an AI layer that helps users understand
-            language naturally while reading.
+            Mục tiêu của Hieusugoi là tạo ra một lớp AI giúp người dùng hiểu ngôn ngữ một cách tự nhiên mà không phá vỡ luồng suy nghĩ vì phải chuyển sang trang tra cứu.
+            
           </p>
 
         </div>
