@@ -29,11 +29,11 @@ export default async function DownloadPage() {
         </h1>
 
         <p className="mb-3 text-lg text-slate-300">
-          AI OCR Translation Overlay for Windows
+          Hãy đăng ký tài khoản để có thể tải miễn phí phần mềm Hieusugoi. 
         </p>
 
         <p className="mb-10 text-sm text-cyan-300">
-          Current version: 1.0.7
+          Hieusugoi version: 1.0.7
         </p>
 
         <a

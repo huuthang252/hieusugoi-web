@@ -30,9 +30,12 @@ export default function HeroSection() {
               Download for Windows
             </a>
 
-            <button className="rounded-full border border-white/20 bg-white/10 px-7 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/20">
-              Watch Demo
-            </button>
+            <a
+            href="https://www.hieusugoi.com/how-to-use"
+            className="rounded-full border border-white/20 bg-white/10 px-7 py-3 font-semibold text-white backdrop-blur transition hover:bg-white/20 inline-block"
+          >
+            Watch Demo
+          </a>
           </div>
         </div>
       </div>

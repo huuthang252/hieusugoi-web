@@ -10,7 +10,7 @@ import { useLanguage } from "@/components/LanguageProvider";
 const menuItems = [
   { label: "Home", href: "/" },
   { label: "How To Use", href: "/how-to-use" },
-  { label: "Applications", href: "/applications" },
+  //{ label: "Applications", href: "/applications" }, không cần thiết
   { label: "Download", href: "/download" },
   { label: "About", href: "/about" },
 ];
