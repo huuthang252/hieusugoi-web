@@ -10,7 +10,7 @@ export default function AboutPage() {
         <div className="space-y-6 text-lg leading-8 text-slate-300">
 
           <p>
-            Hieusugoi là một lớp phủ dịch OCR bằng AI được thiết kế để giúp người dùng đọc tiếng Nhật và tiếng Anh một cách tự nhiên ngay trên màn hình của họ.
+            Hieusugoi là một màn hình trong suốt dịch OCR bằng AI được thiết kế để giúp người dùng đọc tiếng Nhật và tiếng Anh một cách tự nhiên ngay trên màn hình của họ.
           </p>
 
           <p>
