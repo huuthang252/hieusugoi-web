@@ -19,7 +19,7 @@ export default function RegisterPage() {
     setMessage(null);
 
     const supabase = createBrowserClient();
-    const redirectUrl = `${window.location.origin}/auth/callback`;
+    const redirectUrl = "https://hieusugoi.com/auth/callback";
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
