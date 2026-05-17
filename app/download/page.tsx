@@ -29,21 +29,40 @@ export default async function DownloadPage() {
         </h1>
 
         <p className="mb-3 text-lg text-slate-300">
-          Hãy đăng ký tài khoản để có thể tải miễn phí phần mềm Hieusugoi. 
+          Hãy đăng ký tài khoản để có thể tải miễn phí phần mềm Hieusugoi.
         </p>
 
-        <p className="mb-10 text-sm text-cyan-300">
-          Hieusugoi version: 1.0.8
+        {/* ── Latest Version ── */}
+        <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-cyan-400">
+          Latest Version
+        </p>
+        <p className="mb-6 text-sm text-cyan-300">
+          Hieusugoi version: 1.0.9
         </p>
 
         <a
-          href="https://github.com/huuthang252/hieusugoi-web/releases/download/v1.0.8/Hieusugoi_Setup_v1.0.8.exe"
+          href="https://github.com/huuthang252/hieusugoi-web/releases/download/v1.0.9/Hieusugoi_Setup_v1.0.9.exe"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block rounded-full bg-cyan-300 px-10 py-4 text-lg font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.4)] transition hover:scale-105 hover:shadow-[0_0_40px_rgba(64,233,255,0.6)]"
         >
           Download for Windows
         </a>
+
+        {/* ── Older Versions ── */}
+        <div className="mt-14 border-t border-slate-700/60 pt-8">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-slate-500">
+            Older Versions
+          </p>
+          <a
+            href="https://github.com/huuthang252/hieusugoi-web/releases/download/v1.0.8/Hieusugoi_Setup_v1.0.8.exe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-slate-500 underline underline-offset-2 transition hover:text-slate-300"
+          >
+            v1.0.8 — Hieusugoi_Setup_v1.0.8.exe
+          </a>
+        </div>
 
       </div>
     </main>
