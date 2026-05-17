@@ -37,10 +37,10 @@ export default function DownloadCard() {
       {/* VERSION */}
 
       <div className="text-cyan-300 text-2xl mb-2">
-        Version 1.0.8
+        Version 1.1.0
       </div>
       <div className="text-cyan-200 text-sm mb-10">
-        Current version: 1.0.8
+        Current version: 1.1.0
       </div>
 
       {/* PLATFORM */}
