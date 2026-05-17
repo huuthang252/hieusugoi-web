@@ -1,4 +1,35 @@
-        {/* ── Latest Version ── */}
+import { redirect } from "next/navigation";
+import { createServerClient } from "@/lib/supabase-server";
+import { isEmailConfirmed } from "@/lib/profile";
+
+export const dynamic = "force-dynamic";
+
+export default async function DownloadPage() {
+  const supabase = createServerClient();
+  const {
+    data: { session },
+  } = await supabase.auth.getSession();
+
+  if (!session?.user) {
+    redirect("/login");
+  }
+
+  const emailConfirmed = await isEmailConfirmed(session.user);
+  if (!emailConfirmed) {
+    redirect("/auth/error?message=Please confirm your email to access downloads");
+  }
+
+  return (
+    <main className="page-bg page-enter px-8 py-28 text-white">
+      <div className="mx-auto max-w-4xl text-center">
+        <h1 className="mb-6 text-5xl font-bold">
+          Download Hieusugoi
+        </h1>
+
+        <p className="mb-3 text-lg text-slate-300">
+          Hãy đăng ký tài khoản để có thể tải miễn phí phần mềm Hieusugoi.
+        </p>
+
         <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-cyan-400">
           Latest Version
         </p>
@@ -15,3 +46,7 @@
         >
           Download for Windows
         </a>
+      </div>
+    </main>
+  );
+}
