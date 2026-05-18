@@ -22,6 +22,16 @@ export type Language = {
 
 const languages: Language[] = [
   {
+    code: "vi",
+    flag: "/flags/vn.svg",
+    label: "Tiếng Việt",
+    title: "Đọc ngoại ngữ ngay trên màn hình của bạn.",
+    desc: "Hieusugoi hiển thị trong suốt chồng trên tài liệu gốc, dịch tức thì và hỗ trợ học ngoại ngữ mà không cần copy paste.",
+    original: "補助金",
+    reading: "ほじょきん",
+    meaning: "Tiền trợ cấp",
+  },
+  {
     code: "jp",
     flag: "/flags/jp.svg",
     label: "日本語",
@@ -39,16 +49,6 @@ const languages: Language[] = [
     desc: "Hieusugoi overlays transparently on your documents, translates instantly, and helps you learn without copy-paste.",
     original: "Subsidy",
     reading: "/ˈsʌb.sə.di/",
-    meaning: "Tiền trợ cấp",
-  },
-  {
-    code: "vi",
-    flag: "/flags/vn.svg",
-    label: "Tiếng Việt",
-    title: "Đọc ngoại ngữ ngay trên màn hình của bạn.",
-    desc: "Hieusugoi hiển thị trong suốt chồng trên tài liệu gốc, dịch tức thì và hỗ trợ học ngoại ngữ mà không cần copy paste.",
-    original: "補助金",
-    reading: "ほじょきん",
     meaning: "Tiền trợ cấp",
   },
 ];
