@@ -15,7 +15,7 @@ const VERSIONS = [
     tags: [],
   },
   {
-    badge: "Hieusugoi Version",
+    badge: "Try Version",
     version: "1.2.0",
     description: " Không cần đăng nhập — cài đặt và sử dụng ngay.",
     buttonText: "Download for Windows",
@@ -61,7 +61,7 @@ export default async function DownloadPage() {
               </p>
 
               <p className="mb-2 text-sm text-cyan-300">
-                Hieusugoi version: {v.version}
+                Try version: {v.version}
               </p>
 
               <p className="mb-5 text-sm text-slate-400">{v.description}</p>
