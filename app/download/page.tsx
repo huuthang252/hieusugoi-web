@@ -15,7 +15,7 @@ const VERSIONS = [
     tags: [],
   },
   {
-    badge: "Try Version",
+    badge: "beta Version",
     version: "1.2.0",
     description: " Không cần đăng nhập — cài đặt và sử dụng ngay.",
     buttonText: "Download for Windows",
