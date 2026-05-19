@@ -16,7 +16,7 @@ const VERSIONS = [
   },
   {
     badge: "Hieusugoi Version",
-    version: "1.2.0_VN",
+    version: "1.2.0",
     description: " Không cần đăng nhập — cài đặt và sử dụng ngay.",
     buttonText: "Download for Windows",
     url: "https://github.com/huuthang252/hieusugoi-web/releases/download/v1.2.0_VN/Hieusugoi_Setup_v1.2.0_VN.exe",
