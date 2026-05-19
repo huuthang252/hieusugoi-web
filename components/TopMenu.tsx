@@ -12,7 +12,7 @@ const menuItems = [
   { label: "How To Use", href: "/how-to-use" },
   //{ label: "Applications", href: "/applications" }, không cần thiết
   { label: "Download", href: "/download" },
-  { label: "About", href: "/about" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function TopMenu() {

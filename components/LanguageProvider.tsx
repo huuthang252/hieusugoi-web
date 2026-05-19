@@ -25,7 +25,7 @@ const languages: Language[] = [
     code: "vi",
     flag: "/flags/vn.svg",
     label: "Tiếng Việt",
-    title: "Đọc ngoại ngữ ngay trên màn hình của bạn.",
+    title: "Đọc ngoại ngữ ngay trên màn hình.",
     desc: "Hieusugoi hiển thị trong suốt chồng trên tài liệu gốc, dịch tức thì và hỗ trợ học ngoại ngữ mà không cần copy paste.",
     original: "補助金",
     reading: "ほじょきん",
