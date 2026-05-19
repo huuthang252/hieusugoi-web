@@ -15,7 +15,7 @@ const VERSIONS = [
     tags: [],
   },
   {
-    badge: "Vietnam Version",
+    badge: "Hieusugoi Version",
     version: "1.2.0_VN",
     description: " Không cần đăng nhập — cài đặt và sử dụng ngay.",
     buttonText: "Download for Windows",
