@@ -61,7 +61,7 @@ export default async function DownloadPage() {
               </p>
 
               <p className="mb-2 text-sm text-cyan-300">
-                Try version: {v.version}
+                Version: {v.version}
               </p>
 
               <p className="mb-5 text-sm text-slate-400">{v.description}</p>
