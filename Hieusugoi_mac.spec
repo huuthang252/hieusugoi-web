@@ -51,7 +51,7 @@ exe = EXE(
     target_arch=None,   # None = native arch; dùng 'universal2' nếu muốn fat binary
     codesign_identity=None,   # TODO: điền Developer ID khi có certificate
     entitlements_file='entitlements.plist',
-    icon='assets/logo.icns',  # TODO: tạo logo.icns từ logo.ico
+    icon=None,  # TODO: tạo logo.icns từ logo.ico
 )
 
 coll = COLLECT(
