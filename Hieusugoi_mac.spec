@@ -68,17 +68,10 @@ coll = COLLECT(
 app = BUNDLE(
     coll,
     name='Hieusugoi.app',
-    icon='assets/logo.icns',    # TODO: tạo logo.icns
+    icon=None,
     bundle_identifier='com.hieusugoi.app',
     version='2.2.1',
     info_plist={
-        'CFBundleName': 'Hieusugoi',
-        'CFBundleDisplayName': 'Hieusugoi',
-        'CFBundleVersion': '2.2.1',
-        'CFBundleShortVersionString': '2.2.1',
-        'NSHighResolutionCapable': True,
-        'LSUIElement': False,       # True = ẩn khỏi Dock (background app)
-        # KHÔNG khai báo NSScreenCaptureUsageDescription — app không dùng OCR
-        # Accessibility được cấp thủ công bởi user qua System Settings
+        ...
     },
 )
