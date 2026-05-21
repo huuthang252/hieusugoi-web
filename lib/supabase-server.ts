@@ -20,14 +20,19 @@ const getAllCookies = async () => {
 };
 
 const setCookie = async (name: string, value: string, options: any) => {
-  const cookieStore = await cookies();
-  cookieStore.set(name, value, {
-    ...options,
-    path: options.path || "/",
-    httpOnly: options.httpOnly !== false,
-    secure: options.secure !== false && process.env.NODE_ENV === "production",
-    sameSite: options.sameSite || "lax",
-  });
+  try {
+    const cookieStore = await cookies();
+    cookieStore.set(name, value, {
+      ...options,
+      path: options.path || "/",
+      httpOnly: options.httpOnly !== false,
+      secure: options.secure !== false && process.env.NODE_ENV === "production",
+      sameSite: options.sameSite || "lax",
+    });
+  } catch {
+    // Cookies can only be modified in a Server Action or Route Handler.
+    // Ignore when called from a Server Component — reads still work fine.
+  }
 };
 
 export const createServerClient = () => {
@@ -39,8 +44,12 @@ export const createServerClient = () => {
     cookies: {
       getAll: getAllCookies,
       setAll: async (cookies_list: any[]) => {
-        for (const cookie of cookies_list) {
-          await setCookie(cookie.name, cookie.value, cookie.options || {});
+        try {
+          for (const cookie of cookies_list) {
+            await setCookie(cookie.name, cookie.value, cookie.options || {});
+          }
+        } catch {
+          // Same guard — ignore when not in a Server Action or Route Handler.
         }
       },
     },

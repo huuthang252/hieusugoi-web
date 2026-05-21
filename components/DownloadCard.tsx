@@ -2,10 +2,11 @@
 
 import { motion } from "framer-motion";
 
+const DOWNLOAD_URL =
+  "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.0/Hieusugoi_Setup_v2.1.0.exe";
+
 export default function DownloadCard() {
-
   return (
-
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
@@ -27,40 +28,29 @@ export default function DownloadCard() {
         p-16
       "
     >
-
       {/* TITLE */}
-
-      <div className="text-5xl font-bold mb-6">
-        Hieusugoi
-      </div>
+      <div className="text-5xl font-bold mb-6">Hieusugoi</div>
 
       {/* VERSION */}
-
-      <div className="text-cyan-300 text-2xl mb-2">
-        Version 1.1.0
-      </div>
+      <div className="text-cyan-300 text-2xl mb-2">Version 2.1.0</div>
       <div className="text-cyan-200 text-sm mb-10">
-        Current version: 1.1.0
+        Latest version: v2.1.0
       </div>
 
       {/* PLATFORM */}
-
       <div className="text-white/70 text-lg mb-12 leading-relaxed">
-
-        Windows 10 / 11<br />
+        Windows 10 / 11
+        <br />
         64-bit Desktop Application
-
       </div>
 
       {/* DOWNLOAD BUTTON */}
-
-      <motion.button
-        whileHover={{
-          scale: 1.05,
-        }}
-        whileTap={{
-          scale: 0.98,
-        }}
+      <motion.a
+        href={DOWNLOAD_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.98 }}
         className="
           px-10
           py-5
@@ -72,13 +62,10 @@ export default function DownloadCard() {
           shadow-xl
         "
       >
-
-        Download for Windows
-
-      </motion.button>
+        Download Hieusugoi v2.1.0
+      </motion.a>
 
       {/* FEATURES */}
-
       <div className="
         mt-14
         grid
@@ -88,18 +75,13 @@ export default function DownloadCard() {
         text-white/60
         text-sm
       ">
-
         <div>• AI OCR Overlay</div>
-        <div>• Japanese Reading</div>
-
+        <div>• Chat với Hieusugoi</div>
         <div>• AI Translation</div>
-        <div>• English IPA</div>
-
-        <div>• AI Voice</div>
+        <div>• Notes Workspace</div>
+        <div>• AI Voice (TTS)</div>
         <div>• Local Cache</div>
-
       </div>
-
     </motion.div>
   );
 }

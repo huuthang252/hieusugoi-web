@@ -3,26 +3,28 @@ import { createServerClient } from "@/lib/supabase-server";
 import { isEmailConfirmed } from "@/lib/profile";
 
 export const dynamic = "force-dynamic";
+
+const DOWNLOAD_URL =
+  "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.0/Hieusugoi_Setup_v2.1.0.exe";
+
+const RELEASE_NOTES = [
+  "Thêm tính năng Chat với Hieusugoi (trợ lý AI)",
+  "Thêm Ghi Chú — không gian ghi chú cá nhân",
+  "Cải thiện giao diện đồng bộ toàn app",
+];
+
 const VERSIONS = [
   {
     badge: "Latest Version",
-    version: "1.1.0",
-    description: "Phiên bản chính thức mới nhất. Yêu cầu đăng nhập tài khoản.",
-    buttonText: "Download for Windows",
-    url: "https://github.com/huuthang252/hieusugoi-web/releases/download/v1.1.0/Hieusugoi_Setup_v1.1.0.exe",
+    version: "2.1.0",
+    filename: "Hieusugoi_Setup_v2.1.0.exe",
+    description:
+      "Phiên bản chính thức mới nhất. Yêu cầu đăng nhập tài khoản.",
+    buttonText: "Download Hieusugoi v2.1.0",
+    url: DOWNLOAD_URL,
     buttonClass:
       "inline-block rounded-full bg-cyan-300 px-10 py-4 text-lg font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.4)] transition hover:scale-105 hover:shadow-[0_0_40px_rgba(64,233,255,0.6)]",
-    tags: [],
-  },
-  {
-    badge: "beta Version",
-    version: "1.2.0",
-    description: " Không cần đăng nhập — cài đặt và sử dụng ngay.",
-    buttonText: "Download for Windows",
-    url: "https://github.com/huuthang252/hieusugoi-web/releases/download/v1.2.0_VN/Hieusugoi_Setup_v1.2.0_VN.exe",
-    buttonClass:
-      "inline-block rounded-full bg-emerald-400 px-10 py-4 text-lg font-semibold text-slate-950 shadow-[0_0_30px_rgba(52,211,153,0.4)] transition hover:scale-105 hover:shadow-[0_0_40px_rgba(52,211,153,0.6)]",
-    tags: [],
+    tags: ["Windows 10/11", "64-bit", "AI Translation", "Chat"],
   },
 ];
 
@@ -60,8 +62,12 @@ export default async function DownloadPage() {
                 {v.badge}
               </p>
 
-              <p className="mb-2 text-sm text-cyan-300">
-                Version: {v.version}
+              <p className="mb-1 text-2xl font-bold text-white">
+                Hieusugoi v{v.version}
+              </p>
+
+              <p className="mb-2 text-sm text-slate-400 font-mono">
+                {v.filename}
               </p>
 
               <p className="mb-5 text-sm text-slate-400">{v.description}</p>
@@ -71,7 +77,7 @@ export default async function DownloadPage() {
                   {v.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="rounded-full border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-medium text-emerald-300"
+                      className="rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300"
                     >
                       {tag}
                     </span>
@@ -87,6 +93,23 @@ export default async function DownloadPage() {
               >
                 {v.buttonText}
               </a>
+
+              {/* Release notes — only shown for the latest version entry */}
+              {v.version === "2.1.0" && (
+                <div className="mt-8 rounded-xl border border-white/10 bg-white/5 px-6 py-5 text-left">
+                  <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
+                    Có gì mới trong v2.1.0
+                  </p>
+                  <ul className="space-y-1">
+                    {RELEASE_NOTES.map((note) => (
+                      <li key={note} className="text-sm text-slate-300">
+                        <span className="mr-2 text-cyan-400">✦</span>
+                        {note}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           ))}
         </div>
