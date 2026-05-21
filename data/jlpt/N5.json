@@ -1,0 +1,33 @@
+{
+  "level": "N5",
+  "vocabulary": [
+    { "kanji": "勉強する", "reading": "べんきょうする", "meaning_vi": "học, học tập" },
+    { "kanji": "分かる",   "reading": "わかる",         "meaning_vi": "hiểu, biết" },
+    { "kanji": "食べる",   "reading": "たべる",         "meaning_vi": "ăn" }
+  ],
+  "grammar": [
+    {
+      "pattern": "〜たい",
+      "meaning_vi": "Muốn làm gì",
+      "example": "日本語を勉強したい。"
+    },
+    {
+      "pattern": "〜てください",
+      "meaning_vi": "Xin hãy / Hãy làm…",
+      "example": "もう一度言ってください。"
+    },
+    {
+      "pattern": "〜ている",
+      "meaning_vi": "Đang làm (hành động đang tiếp diễn)",
+      "example": "今、勉強している。"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "日本語を＿＿です。",
+      "choices": ["勉強したい", "勉強して", "勉強するたい", "勉強たい"],
+      "answer": 0,
+      "explanation_vi": "〜たい dùng sau thể ます (bỏ ます), diễn đạt mong muốn."
+    }
+  ]
+}

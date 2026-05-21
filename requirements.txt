@@ -1,0 +1,13 @@
+# Hieusugoi v2.2.1 macOS — dependencies
+PyQt5>=5.15
+PyQtWebEngine>=5.15
+openai>=1.0
+requests>=2.31
+
+# macOS: global mouse/keyboard listener
+pynput>=1.7.6
+
+# macOS: AppKit để detect foreground app (đi kèm Xcode / pre-installed trên macOS Python)
+# Cài thủ công nếu dùng venv thuần:
+pyobjc-core>=10.0; sys_platform == "darwin"
+pyobjc-framework-Cocoa>=10.0; sys_platform == "darwin"

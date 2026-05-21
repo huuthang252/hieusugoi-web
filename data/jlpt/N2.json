@@ -1,0 +1,33 @@
+{
+  "level": "N2",
+  "vocabulary": [
+    { "kanji": "概念", "reading": "がいねん", "meaning_vi": "khái niệm" },
+    { "kanji": "把握", "reading": "はあく",   "meaning_vi": "nắm bắt, hiểu rõ" },
+    { "kanji": "懸念", "reading": "けねん",   "meaning_vi": "lo ngại" }
+  ],
+  "grammar": [
+    {
+      "pattern": "〜に際して",
+      "meaning_vi": "Vào lúc… / Nhân dịp… (trang trọng)",
+      "example": "入学に際して注意事項がある。"
+    },
+    {
+      "pattern": "〜からといって",
+      "meaning_vi": "Dù… cũng không hẳn / Không thể vì… mà…",
+      "example": "忙しいからといって休んではいけない。"
+    },
+    {
+      "pattern": "〜を踏まえて",
+      "meaning_vi": "Dựa trên / Căn cứ vào (kết quả, thực tế)",
+      "example": "結果を踏まえて計画を立てる。"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "忙しい＿＿、休んではいけない。",
+      "choices": ["からといって", "からには", "からして", "からこそ"],
+      "answer": 0,
+      "explanation_vi": "〜からといって = dù có lý do là… cũng không thể. Diễn đạt sự bác bỏ lý lẽ biện hộ."
+    }
+  ]
+}

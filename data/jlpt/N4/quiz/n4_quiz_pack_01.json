@@ -1,0 +1,148 @@
+[
+  {
+    "id": "N4_Q_001",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "type": "grammar",
+    "item_type": "fill_in",
+    "question": "私は日本語で手紙を書く＿＿ができます。",
+    "question_vi": "Điền vào chỗ trống để hoàn thành câu:",
+    "choices": [
+      "こと",
+      "もの",
+      "ため",
+      "から"
+    ],
+    "answer": 0,
+    "explanation_vi": "〜ことができる: V辞書形 + こと + ができる。「書くことができる」= có thể viết. 「こと」tạo thành danh từ hoá động từ.",
+    "mistake_hint": "「もの」「ため」「から」không dùng được trong cấu trúc này. Chỉ「こと」mới tạo thành ことができる.",
+    "grammar_refs": [
+      "N4_G_003"
+    ],
+    "vocab_refs": [],
+    "tags": [
+      "ことができる",
+      "ability",
+      "fill_in"
+    ],
+    "difficulty_score": 2.1
+  },
+  {
+    "id": "N4_Q_002",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "type": "vocabulary",
+    "item_type": "vocabulary_choice",
+    "question": "「決める」の意味はどれですか？",
+    "question_vi": "Chọn nghĩa đúng của「決める」:",
+    "choices": [
+      "quyết định",
+      "thay đổi",
+      "tiếp tục",
+      "điều tra"
+    ],
+    "answer": 0,
+    "explanation_vi": "決める (きめる) = quyết định. 変える = thay đổi, 続ける = tiếp tục, 調べる = điều tra. Đây là động từ nhóm 2 (ichidan).",
+    "mistake_hint": "注意: 変える (かえる) cũng phát âm giống「帰る」(trở về) nhưng kanji khác nhau.",
+    "grammar_refs": [],
+    "vocab_refs": [
+      "N4_V_001"
+    ],
+    "tags": [
+      "vocabulary",
+      "verb",
+      "decision"
+    ],
+    "difficulty_score": 1.8
+  },
+  {
+    "id": "N4_Q_003",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "type": "grammar",
+    "item_type": "fill_in",
+    "question": "毎日練習して、やっと泳げる＿＿なりました。",
+    "question_vi": "Điền vào chỗ trống (cấu trúc biến đổi trạng thái):",
+    "choices": [
+      "ように",
+      "ために",
+      "ことに",
+      "まで"
+    ],
+    "answer": 0,
+    "explanation_vi": "〜ようになる: V可能形 + ようになる = trở nên có thể làm gì. 「泳げる」là potential form của「泳ぐ」. 「泳げるようになる」= trở nên có thể bơi được.",
+    "mistake_hint": "「ために」biểu đạt mục đích, không phải kết quả biến đổi. 「ことに」không dùng trước なる theo cách này.",
+    "grammar_refs": [
+      "N4_G_002"
+    ],
+    "vocab_refs": [],
+    "tags": [
+      "ようになる",
+      "change_of_state",
+      "fill_in"
+    ],
+    "difficulty_score": 2.5
+  },
+  {
+    "id": "N4_Q_004",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "type": "grammar",
+    "item_type": "fill_in",
+    "question": "学生は毎日勉強し＿＿なりません。",
+    "question_vi": "Điền vào chỗ trống (cấu trúc bắt buộc):",
+    "choices": [
+      "なければ",
+      "なくても",
+      "ないと",
+      "ないで"
+    ],
+    "answer": 0,
+    "explanation_vi": "〜なければなりません: phải làm gì. 動詞ない形 → 語尾「ない」→「なけ」+ ればなりません。「勉強しない」→「勉強しなけ」+「ればなりません」。",
+    "mistake_hint": "「なくてもいい」= không cần phải làm (ngược nghĩa). 「ないで」= không làm mà... (không phải bắt buộc).",
+    "grammar_refs": [
+      "N4_G_004"
+    ],
+    "vocab_refs": [],
+    "tags": [
+      "なければならない",
+      "obligation",
+      "fill_in"
+    ],
+    "difficulty_score": 2.8
+  },
+  {
+    "id": "N4_Q_005",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "type": "vocabulary",
+    "item_type": "vocabulary_choice",
+    "question": "「大切」と「便利」の意味の組み合わせで正しいのはどれですか？",
+    "question_vi": "Chọn cặp nghĩa đúng của「大切」và「便利」:",
+    "choices": [
+      "quan trọng / tiện lợi",
+      "tiện lợi / quan trọng",
+      "cần thiết / hữu ích",
+      "quý giá / quan trọng"
+    ],
+    "answer": 0,
+    "explanation_vi": "大切 (たいせつ) = quan trọng / quý giá. 便利 (べんり) = tiện lợi. Thứ tự: 大切 trước, 便利 sau — đáp án 0 đúng.",
+    "mistake_hint": "Lưu ý: 大切 có nghĩa 'quý giá / trân trọng' chứ không phải 'cần thiết'. 必要 (ひつよう) mới nghĩa là 'cần thiết'.",
+    "grammar_refs": [],
+    "vocab_refs": [
+      "N4_V_008",
+      "N4_V_009"
+    ],
+    "tags": [
+      "vocabulary",
+      "adjective",
+      "meaning_pair"
+    ],
+    "difficulty_score": 2.0
+  }
+]

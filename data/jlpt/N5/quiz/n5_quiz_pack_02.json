@@ -1,0 +1,774 @@
+[
+  {
+    "id": "N5_Q_201",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "毎朝___で会社に行きます。",
+    "choices": [
+      "電車",
+      "病院",
+      "銀行",
+      "公園"
+    ],
+    "answer": 0,
+    "explanation_vi": "'電車' (でんしゃ) = tàu điện. Đây là phương tiện di chuyển đến công ty mỗi sáng.",
+    "grammar_refs": [
+      "N5_G_102"
+    ],
+    "vocab_refs": [
+      "N5_V_201"
+    ],
+    "tags": [
+      "vocabulary",
+      "transport",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_202",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "___で駅まで行きます。電車より安いです。",
+    "choices": [
+      "バス",
+      "電車",
+      "タクシー",
+      "自転車"
+    ],
+    "answer": 0,
+    "explanation_vi": "'バス' = xe buýt. Rẻ hơn tàu điện, dùng để đến ga.",
+    "grammar_refs": [
+      "N5_G_102"
+    ],
+    "vocab_refs": [
+      "N5_V_202",
+      "N5_V_201"
+    ],
+    "tags": [
+      "vocabulary",
+      "transport",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_203",
+    "level": "N5",
+    "type": "choice",
+    "question": "電車に乗るために行く場所はどこですか。",
+    "choices": [
+      "駅",
+      "病院",
+      "郵便局",
+      "公園"
+    ],
+    "answer": 0,
+    "explanation_vi": "'駅' (えき) = nhà ga, nơi lên tàu điện.",
+    "grammar_refs": [
+      "N5_G_109"
+    ],
+    "vocab_refs": [
+      "N5_V_203",
+      "N5_V_201"
+    ],
+    "tags": [
+      "vocabulary",
+      "place",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_204",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "具合が悪いので___に行きました。",
+    "choices": [
+      "病院",
+      "銀行",
+      "駅",
+      "レストラン"
+    ],
+    "answer": 0,
+    "explanation_vi": "'病院' (びょういん) = bệnh viện. Khi thấy không khỏe thì đến bệnh viện.",
+    "grammar_refs": [
+      "N5_G_110"
+    ],
+    "vocab_refs": [
+      "N5_V_204"
+    ],
+    "tags": [
+      "vocabulary",
+      "place",
+      "health",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_205",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "お金をおろしに___に行きます。",
+    "choices": [
+      "銀行",
+      "病院",
+      "郵便局",
+      "公園"
+    ],
+    "answer": 0,
+    "explanation_vi": "'銀行' (ぎんこう) = ngân hàng. Nơi rút tiền (お金をおろす).",
+    "grammar_refs": [
+      "N5_G_102"
+    ],
+    "vocab_refs": [
+      "N5_V_205"
+    ],
+    "tags": [
+      "vocabulary",
+      "place",
+      "money",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_206",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "手紙を送るために___に行きました。",
+    "choices": [
+      "郵便局",
+      "銀行",
+      "病院",
+      "駅"
+    ],
+    "answer": 0,
+    "explanation_vi": "'郵便局' (ゆうびんきょく) = bưu điện. Nơi gửi thư (手紙を送る).",
+    "grammar_refs": [
+      "N5_G_104"
+    ],
+    "vocab_refs": [
+      "N5_V_206"
+    ],
+    "tags": [
+      "vocabulary",
+      "place",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_207",
+    "level": "N5",
+    "type": "choice",
+    "question": "友達と夕食を食べに___に行きましょう。",
+    "choices": [
+      "レストラン",
+      "銀行",
+      "病院",
+      "郵便局"
+    ],
+    "answer": 0,
+    "explanation_vi": "'レストラン' = nhà hàng. Nơi ăn bữa tối (夕食).",
+    "grammar_refs": [
+      "N5_G_102"
+    ],
+    "vocab_refs": [
+      "N5_V_207",
+      "N5_V_123"
+    ],
+    "tags": [
+      "vocabulary",
+      "food",
+      "place",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_208",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "日曜日、家族と___を散歩しました。",
+    "choices": [
+      "公園",
+      "病院",
+      "銀行",
+      "駅"
+    ],
+    "answer": 0,
+    "explanation_vi": "'公園' (こうえん) = công viên. Nơi đi dạo (散歩する) với gia đình.",
+    "grammar_refs": [
+      "N5_G_104"
+    ],
+    "vocab_refs": [
+      "N5_V_208",
+      "N5_V_124"
+    ],
+    "tags": [
+      "vocabulary",
+      "place",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_209",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "今日は___がいいですね。出かけましょう。",
+    "choices": [
+      "天気",
+      "時間",
+      "仕事",
+      "元気"
+    ],
+    "answer": 0,
+    "explanation_vi": "'天気' (てんき) = thời tiết. 'てんきがいい' = thời tiết đẹp.",
+    "grammar_refs": [
+      "N5_G_101"
+    ],
+    "vocab_refs": [
+      "N5_V_209"
+    ],
+    "tags": [
+      "vocabulary",
+      "weather",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_210",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "外は___が降っているので、傘を持っていきます。",
+    "choices": [
+      "雨",
+      "天気",
+      "朝",
+      "夜"
+    ],
+    "answer": 0,
+    "explanation_vi": "'雨' (あめ) = mưa. '雨が降る' = mưa rơi. Khi trời mưa cần mang ô.",
+    "grammar_refs": [
+      "N5_G_109"
+    ],
+    "vocab_refs": [
+      "N5_V_210"
+    ],
+    "tags": [
+      "vocabulary",
+      "weather",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_211",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "___ごはんを食べてから、学校に行きます。",
+    "choices": [
+      "朝",
+      "夜",
+      "昨日",
+      "明日"
+    ],
+    "answer": 0,
+    "explanation_vi": "'朝' (あさ) = buổi sáng. '朝ごはん' = bữa sáng. Ăn sáng xong mới đi học.",
+    "grammar_refs": [
+      "N5_G_104"
+    ],
+    "vocab_refs": [
+      "N5_V_211"
+    ],
+    "tags": [
+      "vocabulary",
+      "time",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_212",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "___は早く寝てください。明日も学校がありますから。",
+    "choices": [
+      "夜",
+      "朝",
+      "昨日",
+      "天気"
+    ],
+    "answer": 0,
+    "explanation_vi": "'夜' (よる) = buổi tối. 'よるははやく' = tối thì đi sớm.",
+    "grammar_refs": [
+      "N5_G_110"
+    ],
+    "vocab_refs": [
+      "N5_V_212"
+    ],
+    "tags": [
+      "vocabulary",
+      "time",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_213",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "毎朝7時に___。それからシャワーを浴びます。",
+    "choices": [
+      "起きます",
+      "寝ます",
+      "帰ります",
+      "行きます"
+    ],
+    "answer": 0,
+    "explanation_vi": "'起きます' (おきます) = thức dậy. Thức dậy lúc 7 giờ sáng mỗi ngày.",
+    "grammar_refs": [
+      "N5_G_102"
+    ],
+    "vocab_refs": [
+      "N5_V_213"
+    ],
+    "tags": [
+      "vocabulary",
+      "action",
+      "daily",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_214",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "疲れたので、もう___たいです。",
+    "choices": [
+      "寝",
+      "起き",
+      "来",
+      "行き"
+    ],
+    "answer": 0,
+    "explanation_vi": "'寝たい' (ねたい) = muốn ngủ. Vì mệt (疲れた) nên muốn ngủ. Dùng Vます bỏ ます + たい.",
+    "grammar_refs": [
+      "N5_G_105"
+    ],
+    "vocab_refs": [
+      "N5_V_214"
+    ],
+    "tags": [
+      "vocabulary",
+      "desire",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_215",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "今日は白いシャツを___います。",
+    "choices": [
+      "着て",
+      "飲んで",
+      "見て",
+      "書いて"
+    ],
+    "answer": 0,
+    "explanation_vi": "'着ています' (きています) = đang mặc. Vて形 + います = đang trong trạng thái.",
+    "grammar_refs": [
+      "N5_G_102"
+    ],
+    "vocab_refs": [
+      "N5_V_215"
+    ],
+    "tags": [
+      "vocabulary",
+      "action",
+      "clothing",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_216",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "この辞書を___もいいですか。",
+    "choices": [
+      "使って",
+      "飲んで",
+      "食べて",
+      "着て"
+    ],
+    "answer": 0,
+    "explanation_vi": "'使ってもいいですか' (つかってもいいですか) = được dùng không? 'てもいいですか' là cấu trúc xin phép.",
+    "grammar_refs": [
+      "N5_G_107"
+    ],
+    "vocab_refs": [
+      "N5_V_216"
+    ],
+    "tags": [
+      "vocabulary",
+      "permission",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_217",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "母は毎朝お弁当を___ます。",
+    "choices": [
+      "作り",
+      "食べ",
+      "飲み",
+      "見"
+    ],
+    "answer": 0,
+    "explanation_vi": "'作ります' (つくります) = làm, nấu. Mẹ làm cơm hộp mỗi sáng.",
+    "grammar_refs": [
+      "N5_G_102"
+    ],
+    "vocab_refs": [
+      "N5_V_217"
+    ],
+    "tags": [
+      "vocabulary",
+      "action",
+      "food",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_218",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "駅で友達を___ています。もうすぐ来るでしょう。",
+    "choices": [
+      "待っ",
+      "見",
+      "聞い",
+      "話し"
+    ],
+    "answer": 0,
+    "explanation_vi": "'待っています' (まっています) = đang chờ. Vて形 + います diễn đạt hành động đang tiếp diễn.",
+    "grammar_refs": [
+      "N5_G_102"
+    ],
+    "vocab_refs": [
+      "N5_V_218",
+      "N5_V_123"
+    ],
+    "tags": [
+      "vocabulary",
+      "action",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_219",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "日本語は難しいと___ます。でも楽しいです。",
+    "choices": [
+      "思い",
+      "聞き",
+      "見",
+      "書き"
+    ],
+    "answer": 0,
+    "explanation_vi": "'思います' (おもいます) = nghĩ, cho rằng. 'と思います' = tôi nghĩ rằng...",
+    "grammar_refs": [
+      "N5_G_102"
+    ],
+    "vocab_refs": [
+      "N5_V_219"
+    ],
+    "tags": [
+      "vocabulary",
+      "thought",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_220",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "あの店を___ていますか。美味しいですよ。",
+    "choices": [
+      "知っ",
+      "見",
+      "聞い",
+      "話し"
+    ],
+    "answer": 0,
+    "explanation_vi": "'知っていますか' (しっていますか) = bạn có biết không? '知る' ở dạng '知っています' = biết (trạng thái).",
+    "grammar_refs": [
+      "N5_G_102"
+    ],
+    "vocab_refs": [
+      "N5_V_220"
+    ],
+    "tags": [
+      "vocabulary",
+      "knowledge",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_221",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "今週は仕事が多くて、とても___です。",
+    "choices": [
+      "忙しい",
+      "楽しい",
+      "難しい",
+      "易しい"
+    ],
+    "answer": 0,
+    "explanation_vi": "'忙しい' (いそがしい) = bận rộn. Công việc nhiều nên bận.",
+    "grammar_refs": [
+      "N5_G_101"
+    ],
+    "vocab_refs": [
+      "N5_V_221",
+      "N5_V_125"
+    ],
+    "tags": [
+      "vocabulary",
+      "adjective",
+      "work",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_222",
+    "level": "N5",
+    "type": "choice",
+    "question": "日本語の勉強はどうですか。",
+    "choices": [
+      "楽しいです",
+      "忙しいです",
+      "難しいです",
+      "古いです"
+    ],
+    "answer": 0,
+    "explanation_vi": "'楽しい' (たのしい) = vui. Khi học tiếng Nhật thấy vui thì trả lời '楽しいです'.",
+    "grammar_refs": [
+      "N5_G_101"
+    ],
+    "vocab_refs": [
+      "N5_V_222"
+    ],
+    "tags": [
+      "vocabulary",
+      "adjective",
+      "feeling",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_223",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "この問題はとても___から、もう一度考えてください。",
+    "choices": [
+      "難しい",
+      "易しい",
+      "楽しい",
+      "忙しい"
+    ],
+    "answer": 0,
+    "explanation_vi": "'難しい' (むずかしい) = khó. Vì bài toán khó nên hãy suy nghĩ thêm.",
+    "grammar_refs": [
+      "N5_G_110"
+    ],
+    "vocab_refs": [
+      "N5_V_223"
+    ],
+    "tags": [
+      "vocabulary",
+      "adjective",
+      "study",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_224",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "この本はとても___です。子どもでも読めます。",
+    "choices": [
+      "易しい",
+      "難しい",
+      "忙しい",
+      "楽しい"
+    ],
+    "answer": 0,
+    "explanation_vi": "'易しい' (やさしい) = dễ. Sách dễ đến mức trẻ em cũng đọc được.",
+    "grammar_refs": [
+      "N5_G_101"
+    ],
+    "vocab_refs": [
+      "N5_V_224"
+    ],
+    "tags": [
+      "vocabulary",
+      "adjective",
+      "study",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_225",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "___パソコンを買いたいです。今のは古くて遅いです。",
+    "choices": [
+      "新しい",
+      "古い",
+      "長い",
+      "短い"
+    ],
+    "answer": 0,
+    "explanation_vi": "'新しい' (あたらしい) = mới. Muốn mua máy tính mới vì cái hiện tại cũ và chậm.",
+    "grammar_refs": [
+      "N5_G_105"
+    ],
+    "vocab_refs": [
+      "N5_V_225",
+      "N5_V_226"
+    ],
+    "tags": [
+      "vocabulary",
+      "adjective",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_226",
+    "level": "N5",
+    "type": "choice",
+    "question": "この建物は何年も前に建てられました。どんな建物ですか。",
+    "choices": [
+      "古い建物",
+      "新しい建物",
+      "大きい建物",
+      "小さい建物"
+    ],
+    "answer": 0,
+    "explanation_vi": "'古い' (ふるい) = cũ. Tòa nhà được xây từ nhiều năm trước nên là tòa nhà cũ.",
+    "grammar_refs": [
+      "N5_G_101"
+    ],
+    "vocab_refs": [
+      "N5_V_226"
+    ],
+    "tags": [
+      "vocabulary",
+      "adjective",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_227",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "この道はとても___です。端から端まで10キロあります。",
+    "choices": [
+      "長い",
+      "短い",
+      "高い",
+      "新しい"
+    ],
+    "answer": 0,
+    "explanation_vi": "'長い' (ながい) = dài. Con đường dài 10 km từ đầu đến cuối.",
+    "grammar_refs": [
+      "N5_G_101"
+    ],
+    "vocab_refs": [
+      "N5_V_227"
+    ],
+    "tags": [
+      "vocabulary",
+      "adjective",
+      "size",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_228",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "夏は夜が___です。早く暗くなりません。",
+    "choices": [
+      "短い",
+      "長い",
+      "楽しい",
+      "忙しい"
+    ],
+    "answer": 0,
+    "explanation_vi": "'短い' (みじかい) = ngắn. Mùa hè ban đêm ngắn, trời không tối sớm.",
+    "grammar_refs": [
+      "N5_G_101"
+    ],
+    "vocab_refs": [
+      "N5_V_228"
+    ],
+    "tags": [
+      "vocabulary",
+      "adjective",
+      "weather",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_229",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "毎日運動しているので、とても___です。",
+    "choices": [
+      "元気",
+      "忙しい",
+      "難しい",
+      "古い"
+    ],
+    "answer": 0,
+    "explanation_vi": "'元気' (げんき) = khỏe mạnh. Vì tập thể dục mỗi ngày nên rất khỏe.",
+    "grammar_refs": [
+      "N5_G_110"
+    ],
+    "vocab_refs": [
+      "N5_V_229"
+    ],
+    "tags": [
+      "vocabulary",
+      "adjective",
+      "health",
+      "N5"
+    ]
+  },
+  {
+    "id": "N5_Q_230",
+    "level": "N5",
+    "type": "fill_in",
+    "question": "今週末は___ですか。一緒に映画を見ませんか。",
+    "choices": [
+      "暇",
+      "忙しい",
+      "元気",
+      "楽しい"
+    ],
+    "answer": 0,
+    "explanation_vi": "'暇' (ひま) = rảnh rỗi. Hỏi xem cuối tuần có rảnh không để rủ xem phim cùng.",
+    "grammar_refs": [
+      "N5_G_101"
+    ],
+    "vocab_refs": [
+      "N5_V_230",
+      "N5_V_107"
+    ],
+    "tags": [
+      "vocabulary",
+      "adjective",
+      "social",
+      "N5"
+    ]
+  }
+]

@@ -1,0 +1,505 @@
+[
+  {
+    "id": "N5_G_201",
+    "level": "N5",
+    "pattern": "〜でしょう",
+    "meaning_vi": "chắc là..., có lẽ... (phỏng đoán lịch sự)",
+    "formation": "普通形 + でしょう / Adj-na な → でしょう / N + でしょう",
+    "example_jp": "明日は雨が降るでしょう。",
+    "example_reading": "あしたはあめがふるでしょう。",
+    "example_vi": "Chắc là ngày mai trời sẽ mưa.",
+    "tags": [
+      "conjecture",
+      "polite",
+      "basic"
+    ],
+    "search_forms": [
+      "でしょう",
+      "でしょうか",
+      "だろう"
+    ],
+    "related_grammar": [
+      "N5_G_202",
+      "N5_G_101"
+    ]
+  },
+  {
+    "id": "N5_G_202",
+    "level": "N5",
+    "pattern": "〜と思います",
+    "meaning_vi": "tôi nghĩ rằng... (diễn đạt ý kiến, suy nghĩ)",
+    "formation": "普通形 + と思います",
+    "example_jp": "日本語は難しいと思います。",
+    "example_reading": "にほんごはむずかしいとおもいます。",
+    "example_vi": "Tôi nghĩ tiếng Nhật khó.",
+    "tags": [
+      "opinion",
+      "basic"
+    ],
+    "search_forms": [
+      "と思います",
+      "と思いました",
+      "と思っています",
+      "とおもいます"
+    ],
+    "related_grammar": [
+      "N5_G_201",
+      "N5_G_101"
+    ]
+  },
+  {
+    "id": "N5_G_203",
+    "level": "N5",
+    "pattern": "〜ながら",
+    "meaning_vi": "vừa... vừa... (hai hành động cùng lúc)",
+    "formation": "Vます bỏ ます + ながら + V",
+    "example_jp": "音楽を聞きながら勉強します。",
+    "example_reading": "おんがくをききながらべんきょうします。",
+    "example_vi": "Tôi vừa nghe nhạc vừa học.",
+    "tags": [
+      "simultaneous",
+      "conjunction",
+      "basic"
+    ],
+    "search_forms": [
+      "ながら",
+      "ながら、",
+      "ながら勉強",
+      "ながら歩く"
+    ],
+    "related_grammar": [
+      "N5_G_102"
+    ]
+  },
+  {
+    "id": "N5_G_204",
+    "level": "N5",
+    "pattern": "〜前に",
+    "meaning_vi": "trước khi làm gì",
+    "formation": "Vる形 + 前に / N + の + 前に",
+    "example_jp": "寝る前に歯を磨きます。",
+    "example_reading": "ねるまえにはをみがきます。",
+    "example_vi": "Trước khi ngủ tôi đánh răng.",
+    "tags": [
+      "time",
+      "sequence",
+      "basic"
+    ],
+    "search_forms": [
+      "前に",
+      "まえに",
+      "寝る前に",
+      "食べる前に",
+      "前にも"
+    ],
+    "related_grammar": [
+      "N5_G_205"
+    ]
+  },
+  {
+    "id": "N5_G_205",
+    "level": "N5",
+    "pattern": "〜後で",
+    "meaning_vi": "sau khi làm gì",
+    "formation": "Vた形 + 後で / N + の + 後で",
+    "example_jp": "宿題をした後で、テレビを見ます。",
+    "example_reading": "しゅくだいをしたあとで、てれびをみます。",
+    "example_vi": "Sau khi làm bài tập, tôi xem TV.",
+    "tags": [
+      "time",
+      "sequence",
+      "basic"
+    ],
+    "search_forms": [
+      "後で",
+      "あとで",
+      "した後で",
+      "食べた後で",
+      "のあとで"
+    ],
+    "related_grammar": [
+      "N5_G_204"
+    ]
+  },
+  {
+    "id": "N5_G_206",
+    "level": "N5",
+    "pattern": "〜とき",
+    "meaning_vi": "khi..., lúc... (thời điểm xảy ra việc gì)",
+    "formation": "普通形 + とき / N + の + とき",
+    "example_jp": "暇なとき、映画を見ます。",
+    "example_reading": "ひまなとき、えいがをみます。",
+    "example_vi": "Khi rảnh tôi xem phim.",
+    "tags": [
+      "time",
+      "conditional",
+      "basic"
+    ],
+    "search_forms": [
+      "とき",
+      "ときに",
+      "のとき",
+      "なとき",
+      "たとき"
+    ],
+    "related_grammar": [
+      "N5_G_204",
+      "N5_G_205"
+    ]
+  },
+  {
+    "id": "N5_G_207",
+    "level": "N5",
+    "pattern": "〜たり〜たりする",
+    "meaning_vi": "khi thì... khi thì... (liệt kê một số hành động điển hình)",
+    "formation": "Vた形 + り、Vた形 + り + する",
+    "example_jp": "週末は映画を見たり、本を読んだりします。",
+    "example_reading": "しゅうまつはえいがをみたり、ほんをよんだりします。",
+    "example_vi": "Cuối tuần tôi khi thì xem phim, khi thì đọc sách.",
+    "tags": [
+      "listing",
+      "actions",
+      "basic"
+    ],
+    "search_forms": [
+      "たり",
+      "たりします",
+      "たりする",
+      "だり",
+      "だりします"
+    ],
+    "related_grammar": [
+      "N5_G_102",
+      "N5_G_104"
+    ]
+  },
+  {
+    "id": "N5_G_208",
+    "level": "N5",
+    "pattern": "〜ほうがいい",
+    "meaning_vi": "tốt hơn là nên làm gì (lời khuyên)",
+    "formation": "Vた形 + ほうがいい / Vない形 + ほうがいい",
+    "example_jp": "早く寝たほうがいいですよ。",
+    "example_reading": "はやくねたほうがいいですよ。",
+    "example_vi": "Bạn nên ngủ sớm thì tốt hơn.",
+    "tags": [
+      "advice",
+      "recommendation",
+      "basic"
+    ],
+    "search_forms": [
+      "ほうがいい",
+      "ほうがいいです",
+      "たほうがいい",
+      "ないほうがいい"
+    ],
+    "related_grammar": [
+      "N5_G_209",
+      "N5_G_101"
+    ]
+  },
+  {
+    "id": "N5_G_209",
+    "level": "N5",
+    "pattern": "〜なければならない",
+    "meaning_vi": "phải làm gì, bắt buộc phải làm (nghĩa vụ)",
+    "formation": "Vない形 + なければならない",
+    "example_jp": "明日早く起きなければなりません。",
+    "example_reading": "あしたはやくおきなければなりません。",
+    "example_vi": "Ngày mai tôi phải dậy sớm.",
+    "tags": [
+      "obligation",
+      "must",
+      "basic"
+    ],
+    "search_forms": [
+      "なければならない",
+      "なければなりません",
+      "なければいけない",
+      "なければいけません",
+      "ないといけない"
+    ],
+    "related_grammar": [
+      "N5_G_210",
+      "N5_G_108"
+    ]
+  },
+  {
+    "id": "N5_G_210",
+    "level": "N5",
+    "pattern": "〜なくてもいい",
+    "meaning_vi": "không cần phải làm gì (không bắt buộc)",
+    "formation": "Vない形 + なくてもいい",
+    "example_jp": "今日は来なくてもいいです。",
+    "example_reading": "きょうはこなくてもいいです。",
+    "example_vi": "Hôm nay bạn không cần đến cũng được.",
+    "tags": [
+      "not-necessary",
+      "permission",
+      "basic"
+    ],
+    "search_forms": [
+      "なくてもいい",
+      "なくてもいいです",
+      "なくていい",
+      "なくてもかまいません"
+    ],
+    "related_grammar": [
+      "N5_G_209",
+      "N5_G_107"
+    ]
+  },
+  {
+    "id": "N5_G_211",
+    "level": "N5",
+    "pattern": "〜ことができる",
+    "meaning_vi": "có thể làm gì, có khả năng làm gì",
+    "formation": "Vる形 + ことができる",
+    "example_jp": "私は日本語で話すことができます。",
+    "example_reading": "わたしはにほんごではなすことができます。",
+    "example_vi": "Tôi có thể nói chuyện bằng tiếng Nhật.",
+    "tags": [
+      "ability",
+      "potential",
+      "basic"
+    ],
+    "search_forms": [
+      "ことができる",
+      "ことができます",
+      "ことができません",
+      "ことができた"
+    ],
+    "related_grammar": [
+      "N5_G_212",
+      "N5_G_102"
+    ]
+  },
+  {
+    "id": "N5_G_212",
+    "level": "N5",
+    "pattern": "〜ことがある",
+    "meaning_vi": "đôi khi có / từng có kinh nghiệm làm gì",
+    "formation": "Vる形 + ことがある（習慣）/ Vた形 + ことがある（経験）",
+    "example_jp": "時々、電車に乗り遅れることがあります。",
+    "example_reading": "ときどき、でんしゃにのりおくれることがあります。",
+    "example_vi": "Đôi khi tôi bị lỡ tàu.",
+    "tags": [
+      "experience",
+      "sometimes",
+      "basic"
+    ],
+    "search_forms": [
+      "ことがある",
+      "ことがあります",
+      "ことがあった",
+      "たことがある"
+    ],
+    "related_grammar": [
+      "N5_G_211"
+    ]
+  },
+  {
+    "id": "N5_G_213",
+    "level": "N5",
+    "pattern": "〜になる",
+    "meaning_vi": "trở thành... (biến đổi trạng thái đối với danh từ/tính từ -na)",
+    "formation": "N + になる / Adj-na + になる",
+    "example_jp": "将来、医者になりたいです。",
+    "example_reading": "しょうらい、いしゃになりたいです。",
+    "example_vi": "Tương lai tôi muốn trở thành bác sĩ.",
+    "tags": [
+      "change",
+      "state",
+      "basic"
+    ],
+    "search_forms": [
+      "になる",
+      "になります",
+      "になった",
+      "になりたい",
+      "になりました"
+    ],
+    "related_grammar": [
+      "N5_G_214",
+      "N5_G_102"
+    ]
+  },
+  {
+    "id": "N5_G_214",
+    "level": "N5",
+    "pattern": "〜くなる",
+    "meaning_vi": "trở nên... (biến đổi trạng thái đối với tính từ -i)",
+    "formation": "Adj-i bỏ い + くなる",
+    "example_jp": "春になって、暖かくなりました。",
+    "example_reading": "はるになって、あたたかくなりました。",
+    "example_vi": "Mùa xuân đến, trời đã ấm hơn.",
+    "tags": [
+      "change",
+      "state",
+      "i-adjective",
+      "basic"
+    ],
+    "search_forms": [
+      "くなる",
+      "くなります",
+      "くなった",
+      "くなりました"
+    ],
+    "related_grammar": [
+      "N5_G_213"
+    ]
+  },
+  {
+    "id": "N5_G_215",
+    "level": "N5",
+    "pattern": "〜すぎる",
+    "meaning_vi": "quá..., làm quá mức (mang sắc thái tiêu cực)",
+    "formation": "Vます bỏ ます + すぎる / Adj-i bỏ い + すぎる / Adj-na bỏ な + すぎる",
+    "example_jp": "昨日食べすぎて、お腹が痛いです。",
+    "example_reading": "きのうたべすぎて、おなかがいたいです。",
+    "example_vi": "Hôm qua ăn quá nhiều nên đau bụng.",
+    "tags": [
+      "excess",
+      "basic"
+    ],
+    "search_forms": [
+      "すぎる",
+      "すぎます",
+      "すぎた",
+      "すぎて",
+      "すぎない"
+    ],
+    "related_grammar": [
+      "N5_G_216",
+      "N5_G_217"
+    ]
+  },
+  {
+    "id": "N5_G_216",
+    "level": "N5",
+    "pattern": "〜やすい",
+    "meaning_vi": "dễ làm..., hay bị... (dễ xảy ra)",
+    "formation": "Vます bỏ ます + やすい",
+    "example_jp": "この道は滑りやすいので気をつけてください。",
+    "example_reading": "このみちはすべりやすいのできをつけてください。",
+    "example_vi": "Con đường này dễ trơn trượt, hãy cẩn thận.",
+    "tags": [
+      "tendency",
+      "ease",
+      "basic"
+    ],
+    "search_forms": [
+      "やすい",
+      "やすいです",
+      "やすくて",
+      "やすかった"
+    ],
+    "related_grammar": [
+      "N5_G_217"
+    ]
+  },
+  {
+    "id": "N5_G_217",
+    "level": "N5",
+    "pattern": "〜にくい",
+    "meaning_vi": "khó làm..., khó bị... (khó xảy ra)",
+    "formation": "Vます bỏ ます + にくい",
+    "example_jp": "この漢字は書きにくいです。",
+    "example_reading": "このかんじはかきにくいです。",
+    "example_vi": "Chữ kanji này khó viết.",
+    "tags": [
+      "tendency",
+      "difficulty",
+      "basic"
+    ],
+    "search_forms": [
+      "にくい",
+      "にくいです",
+      "にくくて",
+      "にくかった"
+    ],
+    "related_grammar": [
+      "N5_G_216"
+    ]
+  },
+  {
+    "id": "N5_G_218",
+    "level": "N5",
+    "pattern": "〜方",
+    "meaning_vi": "cách làm..., phương pháp làm... (cách thức)",
+    "formation": "Vます bỏ ます + 方（かた）",
+    "example_jp": "この料理の作り方を教えてください。",
+    "example_reading": "このりょうりのつくりかたをおしえてください。",
+    "example_vi": "Xin hãy chỉ tôi cách nấu món ăn này.",
+    "tags": [
+      "method",
+      "how-to",
+      "basic"
+    ],
+    "search_forms": [
+      "方",
+      "かた",
+      "使い方",
+      "読み方",
+      "書き方",
+      "食べ方",
+      "作り方"
+    ],
+    "related_grammar": [
+      "N5_G_106"
+    ]
+  },
+  {
+    "id": "N5_G_219",
+    "level": "N5",
+    "pattern": "〜だけ",
+    "meaning_vi": "chỉ..., chỉ mỗi... (giới hạn)",
+    "formation": "N + だけ / 数量 + だけ / Vる形 + だけ",
+    "example_jp": "今日は水だけ飲みました。",
+    "example_reading": "きょうはみずだけのみました。",
+    "example_vi": "Hôm nay tôi chỉ uống nước.",
+    "tags": [
+      "limit",
+      "only",
+      "basic"
+    ],
+    "search_forms": [
+      "だけ",
+      "だけで",
+      "だけです",
+      "だけが",
+      "だけを",
+      "だけは"
+    ],
+    "related_grammar": [
+      "N5_G_220"
+    ]
+  },
+  {
+    "id": "N5_G_220",
+    "level": "N5",
+    "pattern": "〜しか〜ない",
+    "meaning_vi": "chỉ có... thôi (nhấn mạnh sự ít ỏi, thiếu thốn — dùng với phủ định)",
+    "formation": "N + しか + V（否定形）",
+    "example_jp": "財布に100円しかありません。",
+    "example_reading": "さいふにひゃくえんしかありません。",
+    "example_vi": "Trong ví chỉ có 100 yên thôi.",
+    "tags": [
+      "limit",
+      "only",
+      "negative",
+      "basic"
+    ],
+    "search_forms": [
+      "しか",
+      "しかない",
+      "しかありません",
+      "しかいません",
+      "しかできない"
+    ],
+    "related_grammar": [
+      "N5_G_219",
+      "N5_G_103"
+    ]
+  }
+]

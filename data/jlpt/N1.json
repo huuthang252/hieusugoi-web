@@ -1,0 +1,33 @@
+{
+  "level": "N1",
+  "vocabulary": [
+    { "kanji": "緩和", "reading": "かんわ",   "meaning_vi": "nới lỏng, giảm nhẹ" },
+    { "kanji": "遵守", "reading": "じゅんしゅ", "meaning_vi": "tuân thủ" },
+    { "kanji": "脆弱", "reading": "ぜいじゃく", "meaning_vi": "dễ tổn thương, mong manh" }
+  ],
+  "grammar": [
+    {
+      "pattern": "〜をもって",
+      "meaning_vi": "Bằng / Với… / Kể từ… (trang trọng, văn viết)",
+      "example": "本日をもって終了します。"
+    },
+    {
+      "pattern": "〜ならではの",
+      "meaning_vi": "Chỉ… mới có / Đặc trưng riêng của…",
+      "example": "日本ならではの文化だ。"
+    },
+    {
+      "pattern": "〜にほかならない",
+      "meaning_vi": "Chính là / Không gì khác hơn (khẳng định mạnh)",
+      "example": "これは努力にほかならない。"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "これは彼女の努力＿＿ならない。",
+      "choices": ["にほかに", "にほかならに", "ほかならない", "にほかならない"],
+      "answer": 3,
+      "explanation_vi": "〜にほかならない = chính là, không gì khác. Công thức: Danh từ + にほかならない."
+    }
+  ]
+}

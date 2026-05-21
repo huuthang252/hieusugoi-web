@@ -1,0 +1,508 @@
+[
+  {
+    "id": "N5_G_301",
+    "level": "N5",
+    "pattern": "〜てから",
+    "meaning_vi": "sau khi làm X xong thì làm Y (tuần tự hành động)",
+    "formation": "Vて形 + から + V",
+    "example_jp": "手を洗ってから、ご飯を食べます。",
+    "example_reading": "てをあらってから、ごはんをたべます。",
+    "example_vi": "Tôi rửa tay xong rồi mới ăn cơm.",
+    "tags": [
+      "sequence",
+      "time",
+      "basic"
+    ],
+    "search_forms": [
+      "てから",
+      "でから",
+      "洗ってから",
+      "食べてから",
+      "帰ってから"
+    ],
+    "related_grammar": [
+      "N5_G_204",
+      "N5_G_205"
+    ]
+  },
+  {
+    "id": "N5_G_302",
+    "level": "N5",
+    "pattern": "〜ましょう / 〜ましょうか",
+    "meaning_vi": "nào cùng... nhé / mình... được không? (rủ rê, đề nghị)",
+    "formation": "Vます bỏ ます + ましょう / ましょうか",
+    "example_jp": "一緒に昼ごはんを食べましょうか。",
+    "example_reading": "いっしょにひるごはんをたべましょうか。",
+    "example_vi": "Chúng ta cùng ăn trưa nhé?",
+    "tags": [
+      "suggestion",
+      "invitation",
+      "polite",
+      "basic"
+    ],
+    "search_forms": [
+      "ましょう",
+      "ましょうか",
+      "行きましょう",
+      "食べましょう",
+      "始めましょう"
+    ],
+    "related_grammar": [
+      "N5_G_303",
+      "N5_G_102"
+    ]
+  },
+  {
+    "id": "N5_G_303",
+    "level": "N5",
+    "pattern": "〜ませんか",
+    "meaning_vi": "bạn có muốn... không? (mời, rủ lịch sự)",
+    "formation": "Vます bỏ ます + ませんか",
+    "example_jp": "今夜、一緒に映画を見ませんか。",
+    "example_reading": "こんや、いっしょにえいがをみませんか。",
+    "example_vi": "Tối nay bạn có muốn cùng xem phim không?",
+    "tags": [
+      "invitation",
+      "polite",
+      "basic"
+    ],
+    "search_forms": [
+      "ませんか",
+      "行きませんか",
+      "食べませんか",
+      "来ませんか"
+    ],
+    "related_grammar": [
+      "N5_G_302",
+      "N5_G_103"
+    ]
+  },
+  {
+    "id": "N5_G_304",
+    "level": "N5",
+    "pattern": "〜より〜のほうが",
+    "meaning_vi": "B hơn A về... (so sánh hai thứ)",
+    "formation": "A より B のほうが + Adj",
+    "example_jp": "バスより電車のほうが速いです。",
+    "example_reading": "ばすよりでんしゃのほうがはやいです。",
+    "example_vi": "Tàu điện nhanh hơn xe buýt.",
+    "tags": [
+      "comparison",
+      "basic"
+    ],
+    "search_forms": [
+      "より",
+      "のほうが",
+      "よりも",
+      "よりずっと"
+    ],
+    "related_grammar": [
+      "N5_G_101"
+    ]
+  },
+  {
+    "id": "N5_G_305",
+    "level": "N5",
+    "pattern": "〜という",
+    "meaning_vi": "được gọi là..., có tên là..., (trích dẫn tên/nội dung)",
+    "formation": "N / 文 + という + N",
+    "example_jp": "「さくら」という映画を見ましたか。",
+    "example_reading": "「さくら」というえいがをみましたか。",
+    "example_vi": "Bạn đã xem bộ phim tên là 'Sakura' chưa?",
+    "tags": [
+      "quotation",
+      "naming",
+      "basic"
+    ],
+    "search_forms": [
+      "という",
+      "といいます",
+      "というのは",
+      "といわれる"
+    ],
+    "related_grammar": [
+      "N5_G_202"
+    ]
+  },
+  {
+    "id": "N5_G_306",
+    "level": "N5",
+    "pattern": "〜てみる",
+    "meaning_vi": "thử làm gì xem sao",
+    "formation": "Vて形 + みる",
+    "example_jp": "新しいレストランに行ってみましょう。",
+    "example_reading": "あたらしいれすとらんにいってみましょう。",
+    "example_vi": "Hãy thử đến nhà hàng mới xem.",
+    "tags": [
+      "attempt",
+      "try",
+      "basic"
+    ],
+    "search_forms": [
+      "てみる",
+      "てみます",
+      "てみました",
+      "てみた",
+      "でみます"
+    ],
+    "related_grammar": [
+      "N5_G_314"
+    ]
+  },
+  {
+    "id": "N5_G_307",
+    "level": "N5",
+    "pattern": "〜てしまう",
+    "meaning_vi": "lỡ làm gì, đã làm gì mất rồi (thường mang sắc thái hối tiếc hoặc hoàn thành)",
+    "formation": "Vて形 + しまう",
+    "example_jp": "宿題を忘れてしまいました。",
+    "example_reading": "しゅくだいをわすれてしまいました。",
+    "example_vi": "Tôi đã lỡ quên mất bài tập về nhà.",
+    "tags": [
+      "completion",
+      "regret",
+      "basic"
+    ],
+    "search_forms": [
+      "てしまう",
+      "てしまいます",
+      "てしまいました",
+      "てしまって",
+      "ちゃった",
+      "ちゃいました"
+    ],
+    "related_grammar": [
+      "N5_G_104"
+    ]
+  },
+  {
+    "id": "N5_G_308",
+    "level": "N5",
+    "pattern": "〜かもしれない",
+    "meaning_vi": "có thể là..., biết đâu... (không chắc chắn)",
+    "formation": "普通形 + かもしれない / かもしれません",
+    "example_jp": "明日は雨が降るかもしれません。",
+    "example_reading": "あしたはあめがふるかもしれません。",
+    "example_vi": "Biết đâu ngày mai trời mưa.",
+    "tags": [
+      "uncertainty",
+      "possibility",
+      "basic"
+    ],
+    "search_forms": [
+      "かもしれない",
+      "かもしれません",
+      "かもしれなかった"
+    ],
+    "related_grammar": [
+      "N5_G_201",
+      "N5_G_317"
+    ]
+  },
+  {
+    "id": "N5_G_309",
+    "level": "N5",
+    "pattern": "〜そうです（様態）",
+    "meaning_vi": "trông có vẻ..., nhìn thấy như thể... (nhận xét qua quan sát)",
+    "formation": "Vます bỏ ます + そうです / Adj-i bỏ い + そうです / Adj-na bỏ な + そうです",
+    "example_jp": "空が暗いので、雨が降りそうです。",
+    "example_reading": "そらがくらいので、あめがふりそうです。",
+    "example_vi": "Bầu trời tối nên trông như sắp mưa.",
+    "tags": [
+      "appearance",
+      "conjecture",
+      "basic"
+    ],
+    "search_forms": [
+      "そうです",
+      "そうな",
+      "そうに",
+      "そうで",
+      "降りそう",
+      "おいしそう"
+    ],
+    "related_grammar": [
+      "N5_G_310",
+      "N5_G_201"
+    ]
+  },
+  {
+    "id": "N5_G_310",
+    "level": "N5",
+    "pattern": "〜らしいです",
+    "meaning_vi": "nghe nói là..., có vẻ như... (dựa trên thông tin nghe được)",
+    "formation": "普通形 + らしいです / N + らしいです",
+    "example_jp": "田中さんは来週、旅行に行くらしいです。",
+    "example_reading": "たなかさんはらいしゅう、りょこうにいくらしいです。",
+    "example_vi": "Nghe nói anh Tanaka tuần sau đi du lịch.",
+    "tags": [
+      "hearsay",
+      "conjecture",
+      "basic"
+    ],
+    "search_forms": [
+      "らしいです",
+      "らしい",
+      "らしく",
+      "らしかった"
+    ],
+    "related_grammar": [
+      "N5_G_309",
+      "N5_G_201"
+    ]
+  },
+  {
+    "id": "N5_G_311",
+    "level": "N5",
+    "pattern": "〜ために",
+    "meaning_vi": "để (làm gì), vì mục đích...",
+    "formation": "Vる形 + ために / N + の + ために",
+    "example_jp": "日本語を上手に話すために、毎日練習します。",
+    "example_reading": "にほんごをじょうずにはなすために、まいにちれんしゅうします。",
+    "example_vi": "Để nói tiếng Nhật giỏi, tôi luyện tập mỗi ngày.",
+    "tags": [
+      "purpose",
+      "reason",
+      "basic"
+    ],
+    "search_forms": [
+      "ために",
+      "ためです",
+      "ための",
+      "のために"
+    ],
+    "related_grammar": [
+      "N5_G_110"
+    ]
+  },
+  {
+    "id": "N5_G_312",
+    "level": "N5",
+    "pattern": "〜ても",
+    "meaning_vi": "dù... cũng..., dù... đến đâu cũng... (nhượng bộ)",
+    "formation": "Vて形 + も / Adj-i くても / Adj-na でも / N でも",
+    "example_jp": "忙しくても、毎日運動します。",
+    "example_reading": "いそがしくても、まいにちうんどうします。",
+    "example_vi": "Dù bận đến đâu tôi cũng tập thể dục mỗi ngày.",
+    "tags": [
+      "concession",
+      "even-if",
+      "basic"
+    ],
+    "search_forms": [
+      "ても",
+      "でも",
+      "くても",
+      "くても、",
+      "ても、"
+    ],
+    "related_grammar": [
+      "N5_G_107",
+      "N5_G_110"
+    ]
+  },
+  {
+    "id": "N5_G_313",
+    "level": "N5",
+    "pattern": "もう〜た / まだ〜ていない",
+    "meaning_vi": "đã...rồi / vẫn chưa... (trạng thái hoàn thành hay chưa)",
+    "formation": "もう + Vた形 (đã xong) / まだ + Vていない (chưa xong)",
+    "example_jp": "もう宿題をしましたか。いいえ、まだしていません。",
+    "example_reading": "もうしゅくだいをしましたか。いいえ、まだしていません。",
+    "example_vi": "Bạn đã làm bài tập chưa? Chưa, tôi vẫn chưa làm.",
+    "tags": [
+      "completion",
+      "time",
+      "basic"
+    ],
+    "search_forms": [
+      "もう",
+      "まだ",
+      "もうした",
+      "まだしていない",
+      "まだです"
+    ],
+    "related_grammar": [
+      "N5_G_104"
+    ]
+  },
+  {
+    "id": "N5_G_314",
+    "level": "N5",
+    "pattern": "〜ておく",
+    "meaning_vi": "làm trước để chuẩn bị, làm sẵn cho sau",
+    "formation": "Vて形 + おく",
+    "example_jp": "旅行の前にホテルを予約しておきます。",
+    "example_reading": "りょこうのまえにほてるをよやくしておきます。",
+    "example_vi": "Trước chuyến đi tôi đặt khách sạn trước.",
+    "tags": [
+      "preparation",
+      "advance",
+      "basic"
+    ],
+    "search_forms": [
+      "ておく",
+      "ておきます",
+      "ておいた",
+      "ておきました",
+      "でおく"
+    ],
+    "related_grammar": [
+      "N5_G_306",
+      "N5_G_204"
+    ]
+  },
+  {
+    "id": "N5_G_315",
+    "level": "N5",
+    "pattern": "〜てある",
+    "meaning_vi": "(ai đó đã làm và) vẫn còn ở trạng thái đó (kết quả còn tồn tại)",
+    "formation": "他動詞Vて形 + ある",
+    "example_jp": "部屋の窓が開けてあります。",
+    "example_reading": "へやのまどがあけてあります。",
+    "example_vi": "Cửa sổ phòng được mở (và vẫn đang mở).",
+    "tags": [
+      "resultant-state",
+      "preparation",
+      "basic"
+    ],
+    "search_forms": [
+      "てある",
+      "てあります",
+      "てあった",
+      "でありますます"
+    ],
+    "related_grammar": [
+      "N5_G_314",
+      "N5_G_109"
+    ]
+  },
+  {
+    "id": "N5_G_316",
+    "level": "N5",
+    "pattern": "〜ばかり",
+    "meaning_vi": "vừa mới...; chỉ toàn... (giới hạn hoặc vừa xảy ra)",
+    "formation": "Vた形 + ばかり (vừa mới) / N + ばかり (chỉ toàn)",
+    "example_jp": "日本に来たばかりなので、まだ何もわかりません。",
+    "example_reading": "にほんにきたばかりなので、まだなにもわかりません。",
+    "example_vi": "Vì mới đến Nhật nên tôi vẫn chưa biết gì cả.",
+    "tags": [
+      "just-did",
+      "only",
+      "basic"
+    ],
+    "search_forms": [
+      "ばかり",
+      "たばかり",
+      "ばかりです",
+      "ばかりで",
+      "ばかりだ"
+    ],
+    "related_grammar": [
+      "N5_G_313"
+    ]
+  },
+  {
+    "id": "N5_G_317",
+    "level": "N5",
+    "pattern": "〜はずです",
+    "meaning_vi": "chắc là..., đáng lẽ phải... (kỳ vọng có cơ sở, logic)",
+    "formation": "普通形 + はずです / N + の + はずです",
+    "example_jp": "彼女は3時に来るはずです。",
+    "example_reading": "かのじょはさんじにくるはずです。",
+    "example_vi": "Cô ấy chắc chắn sẽ đến lúc 3 giờ.",
+    "tags": [
+      "expectation",
+      "certainty",
+      "basic"
+    ],
+    "search_forms": [
+      "はずです",
+      "はずだ",
+      "はずがない",
+      "はずでした"
+    ],
+    "related_grammar": [
+      "N5_G_308",
+      "N5_G_201"
+    ]
+  },
+  {
+    "id": "N5_G_318",
+    "level": "N5",
+    "pattern": "〜し〜し",
+    "meaning_vi": "vừa... vừa..., ngoài ra còn... (liệt kê nhiều lý do hoặc đặc điểm)",
+    "formation": "普通形 + し、普通形 + し",
+    "example_jp": "このカフェは安いし、静かだし、よく来ます。",
+    "example_reading": "このかふぇはやすいし、しずかだし、よくきます。",
+    "example_vi": "Quán cà phê này vừa rẻ vừa yên tĩnh nên tôi hay đến.",
+    "tags": [
+      "listing",
+      "reason",
+      "basic"
+    ],
+    "search_forms": [
+      "し、",
+      "だし",
+      "ですし",
+      "いし、"
+    ],
+    "related_grammar": [
+      "N5_G_207",
+      "N5_G_110"
+    ]
+  },
+  {
+    "id": "N5_G_319",
+    "level": "N5",
+    "pattern": "〜まで",
+    "meaning_vi": "cho đến..., đến tận... (giới hạn thời gian hoặc địa điểm)",
+    "formation": "N（時間/場所）+ まで",
+    "example_jp": "駅まで歩いて10分かかります。",
+    "example_reading": "えきまであるいてじゅっぷんかかります。",
+    "example_vi": "Đi bộ đến ga mất 10 phút.",
+    "tags": [
+      "limit",
+      "time",
+      "place",
+      "basic"
+    ],
+    "search_forms": [
+      "まで",
+      "までに",
+      "まで歩く",
+      "まで来る",
+      "まで待つ"
+    ],
+    "related_grammar": [
+      "N5_G_204"
+    ]
+  },
+  {
+    "id": "N5_G_320",
+    "level": "N5",
+    "pattern": "〜と（条件）",
+    "meaning_vi": "nếu... thì... (điều kiện tự nhiên, chỉ đường, quy luật)",
+    "formation": "普通形 + と + 結果",
+    "example_jp": "右に曲がると、駅が見えます。",
+    "example_reading": "みぎにまがると、えきがみえます。",
+    "example_vi": "Nếu rẽ phải thì bạn sẽ thấy ga.",
+    "tags": [
+      "conditional",
+      "natural",
+      "direction",
+      "basic"
+    ],
+    "search_forms": [
+      "と、",
+      "すると",
+      "になると",
+      "あけると",
+      "おすと"
+    ],
+    "related_grammar": [
+      "N5_G_110",
+      "N5_G_206"
+    ]
+  }
+]

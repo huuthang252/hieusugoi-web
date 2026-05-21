@@ -1,0 +1,404 @@
+[
+  {
+    "id": "N4_V_001",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "word": "決める",
+    "reading": "きめる",
+    "kanji": "決める",
+    "meaning_vi": "quyết định",
+    "part_of_speech": "verb",
+    "example_jp": "旅行の日程を決めました。",
+    "example_reading": "りょこうのにっていをきめました。",
+    "example_vi": "Tôi đã quyết định lịch trình chuyến đi.",
+    "tags": [
+      "decision",
+      "transitive",
+      "daily"
+    ],
+    "search_forms": [
+      "決める",
+      "決めます",
+      "決めた",
+      "決めました",
+      "決めて",
+      "決めない",
+      "決めれば",
+      "きめる",
+      "きめた"
+    ],
+    "verb_group": 2,
+    "transitivity": "transitive",
+    "collocations": [
+      "日程を決める",
+      "計画を決める",
+      "場所を決める",
+      "方向を決める"
+    ],
+    "difficulty_score": 2.0,
+    "domain_tags": [
+      "daily",
+      "planning"
+    ],
+    "antonym_id": "N4_V_002"
+  },
+  {
+    "id": "N4_V_002",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "word": "変える",
+    "reading": "かえる",
+    "kanji": "変える",
+    "meaning_vi": "thay đổi (cái gì đó), thay thế",
+    "part_of_speech": "verb",
+    "example_jp": "考えを変えることが大切です。",
+    "example_reading": "かんがえをかえることがたいせつです。",
+    "example_vi": "Việc thay đổi cách suy nghĩ là điều quan trọng.",
+    "tags": [
+      "change",
+      "transitive",
+      "daily"
+    ],
+    "search_forms": [
+      "変える",
+      "変えます",
+      "変えた",
+      "変えました",
+      "変えて",
+      "変えない",
+      "かえる",
+      "かえた",
+      "かえて"
+    ],
+    "verb_group": 2,
+    "transitivity": "transitive",
+    "collocations": [
+      "考えを変える",
+      "予定を変える",
+      "方針を変える"
+    ],
+    "difficulty_score": 2.1,
+    "domain_tags": [
+      "daily"
+    ],
+    "notes_vi": "Phân biệt: 変える (타동사, thay đổi cái gì) vs 変わる (자동사, cái gì thay đổi).",
+    "antonym_id": "N4_V_001"
+  },
+  {
+    "id": "N4_V_003",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "word": "調べる",
+    "reading": "しらべる",
+    "kanji": "調べる",
+    "meaning_vi": "tra cứu, điều tra, kiểm tra",
+    "part_of_speech": "verb",
+    "example_jp": "辞書で意味を調べてみました。",
+    "example_reading": "じしょでいみをしらべてみました。",
+    "example_vi": "Tôi đã thử tra nghĩa trong từ điển.",
+    "tags": [
+      "research",
+      "transitive",
+      "daily",
+      "academic"
+    ],
+    "search_forms": [
+      "調べる",
+      "調べます",
+      "調べた",
+      "調べました",
+      "調べて",
+      "調べない",
+      "しらべる",
+      "しらべた",
+      "しらべて"
+    ],
+    "verb_group": 2,
+    "transitivity": "transitive",
+    "collocations": [
+      "インターネットで調べる",
+      "意味を調べる",
+      "原因を調べる"
+    ],
+    "difficulty_score": 2.0,
+    "domain_tags": [
+      "daily",
+      "academic"
+    ]
+  },
+  {
+    "id": "N4_V_004",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "word": "続ける",
+    "reading": "つづける",
+    "kanji": "続ける",
+    "meaning_vi": "tiếp tục (làm gì)",
+    "part_of_speech": "verb",
+    "example_jp": "毎日練習を続けることが上達の近道です。",
+    "example_reading": "まいにちれんしゅうをつづけることがじょうたつのちかみちです。",
+    "example_vi": "Tiếp tục luyện tập mỗi ngày là con đường ngắn nhất để tiến bộ.",
+    "tags": [
+      "continuation",
+      "transitive",
+      "daily"
+    ],
+    "search_forms": [
+      "続ける",
+      "続けます",
+      "続けた",
+      "続けました",
+      "続けて",
+      "続けない",
+      "つづける",
+      "つづけた",
+      "つづけて"
+    ],
+    "verb_group": 2,
+    "transitivity": "transitive",
+    "collocations": [
+      "練習を続ける",
+      "勉強を続ける",
+      "仕事を続ける",
+      "努力を続ける"
+    ],
+    "difficulty_score": 2.0,
+    "domain_tags": [
+      "daily",
+      "academic"
+    ]
+  },
+  {
+    "id": "N4_V_005",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "word": "伝える",
+    "reading": "つたえる",
+    "kanji": "伝える",
+    "meaning_vi": "truyền đạt, thông báo, cho biết",
+    "part_of_speech": "verb",
+    "example_jp": "気持ちをうまく伝えることができませんでした。",
+    "example_reading": "きもちをうまくつたえることができませんでした。",
+    "example_vi": "Tôi đã không thể truyền đạt được cảm xúc một cách đúng đắn.",
+    "tags": [
+      "communication",
+      "transitive",
+      "daily"
+    ],
+    "search_forms": [
+      "伝える",
+      "伝えます",
+      "伝えた",
+      "伝えました",
+      "伝えて",
+      "伝えない",
+      "つたえる",
+      "つたえた",
+      "つたえて"
+    ],
+    "verb_group": 2,
+    "transitivity": "transitive",
+    "collocations": [
+      "気持ちを伝える",
+      "情報を伝える",
+      "メッセージを伝える"
+    ],
+    "difficulty_score": 2.3,
+    "domain_tags": [
+      "daily",
+      "communication"
+    ]
+  },
+  {
+    "id": "N4_V_006",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "word": "経験",
+    "reading": "けいけん",
+    "kanji": "経験",
+    "meaning_vi": "kinh nghiệm, trải nghiệm",
+    "part_of_speech": "noun",
+    "example_jp": "海外生活の経験が仕事に役立っています。",
+    "example_reading": "かいがいせいかつのけいけんがしごとにやくだっています。",
+    "example_vi": "Kinh nghiệm sống ở nước ngoài đang hữu ích cho công việc.",
+    "tags": [
+      "experience",
+      "noun",
+      "daily"
+    ],
+    "search_forms": [
+      "経験",
+      "経験する",
+      "経験した",
+      "経験して",
+      "経験があ",
+      "経験を",
+      "けいけん"
+    ],
+    "collocations": [
+      "経験がある",
+      "経験を積む",
+      "経験者",
+      "貴重な経験"
+    ],
+    "difficulty_score": 2.2,
+    "domain_tags": [
+      "daily",
+      "career"
+    ],
+    "notes_vi": "Cũng dùng như động từ: 経験する (trải nghiệm, trải qua)."
+  },
+  {
+    "id": "N4_V_007",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "word": "予定",
+    "reading": "よてい",
+    "kanji": "予定",
+    "meaning_vi": "kế hoạch, lịch trình, dự kiến",
+    "part_of_speech": "noun",
+    "example_jp": "週末の予定はもう決まりましたか？",
+    "example_reading": "しゅうまつのよていはもうきまりましたか？",
+    "example_vi": "Kế hoạch cuối tuần đã sắp xếp xong chưa?",
+    "tags": [
+      "planning",
+      "schedule",
+      "daily"
+    ],
+    "search_forms": [
+      "予定",
+      "予定する",
+      "予定した",
+      "予定がある",
+      "予定を",
+      "予定通り",
+      "よてい"
+    ],
+    "collocations": [
+      "予定がある",
+      "予定を立てる",
+      "予定通り",
+      "予定変更"
+    ],
+    "difficulty_score": 2.0,
+    "domain_tags": [
+      "daily",
+      "planning"
+    ]
+  },
+  {
+    "id": "N4_V_008",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "word": "大切",
+    "reading": "たいせつ",
+    "kanji": "大切",
+    "meaning_vi": "quan trọng, quý giá, trân trọng",
+    "part_of_speech": "adjective",
+    "example_jp": "健康が一番大切だと思います。",
+    "example_reading": "けんこうがいちばんたいせつだとおもいます。",
+    "example_vi": "Tôi nghĩ sức khoẻ là điều quý giá nhất.",
+    "tags": [
+      "importance",
+      "value",
+      "daily"
+    ],
+    "search_forms": [
+      "大切",
+      "大切な",
+      "大切に",
+      "大切だ",
+      "大切です",
+      "たいせつ"
+    ],
+    "collocations": [
+      "大切にする",
+      "大切なもの",
+      "大切な人"
+    ],
+    "difficulty_score": 2.0,
+    "domain_tags": [
+      "daily"
+    ],
+    "notes_vi": "Sắc thái cảm xúc hơn 大事 (たいじ) — 大切 nhấn mạnh giá trị quý giá, 大事 nhấn mạnh tầm quan trọng."
+  },
+  {
+    "id": "N4_V_009",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "word": "便利",
+    "reading": "べんり",
+    "kanji": "便利",
+    "meaning_vi": "tiện lợi, hữu ích, thuận tiện",
+    "part_of_speech": "adjective",
+    "example_jp": "スマートフォンは生活をとても便利にしてくれました。",
+    "example_reading": "スマートフォンはせいかつをとてもべんりにしてくれました。",
+    "example_vi": "Điện thoại thông minh đã làm cho cuộc sống trở nên rất tiện lợi.",
+    "tags": [
+      "convenience",
+      "utility",
+      "daily"
+    ],
+    "search_forms": [
+      "便利",
+      "便利な",
+      "便利に",
+      "便利だ",
+      "便利です",
+      "べんり"
+    ],
+    "collocations": [
+      "便利なアプリ",
+      "交通が便利",
+      "便利になる",
+      "便利グッズ"
+    ],
+    "difficulty_score": 1.9,
+    "domain_tags": [
+      "daily",
+      "technology"
+    ]
+  },
+  {
+    "id": "N4_V_010",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "word": "必ず",
+    "reading": "かならず",
+    "kanji": "必ず",
+    "meaning_vi": "nhất định, chắc chắn (100%, không có ngoại lệ)",
+    "part_of_speech": "adverb",
+    "example_jp": "約束したことは必ず守ります。",
+    "example_reading": "やくそくしたことはかならずまもります。",
+    "example_vi": "Những điều đã hứa, tôi nhất định sẽ giữ.",
+    "tags": [
+      "certainty",
+      "emphasis",
+      "daily"
+    ],
+    "search_forms": [
+      "必ず",
+      "かならず"
+    ],
+    "collocations": [
+      "必ず守る",
+      "必ずしも",
+      "必ず来る"
+    ],
+    "difficulty_score": 2.0,
+    "domain_tags": [
+      "daily"
+    ],
+    "notes_vi": "Khác きっと (kỳ vọng mạnh, ~95%) — 必ず là tuyệt đối 100%, thường dùng khi hứa hẹn."
+  }
+]

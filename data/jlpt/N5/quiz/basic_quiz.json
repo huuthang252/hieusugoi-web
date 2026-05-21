@@ -1,0 +1,70 @@
+[
+  {
+    "id": "N5_Q_001",
+    "level": "N5",
+    "type": "grammar",
+    "question": "日本語を＿＿です。",
+    "choices": [
+      "勉強したい",
+      "勉強して",
+      "勉強するたい",
+      "勉強たい"
+    ],
+    "answer": 0,
+    "explanation_vi": "Động từ 勉強する khi dùng với 〜たい sẽ thành 勉強したい (bỏ ます → したい).",
+    "grammar_refs": [
+      "N5_G_001"
+    ],
+    "vocab_refs": [
+      "N5_V_001"
+    ],
+    "tags": [
+      "たい",
+      "desire"
+    ]
+  },
+  {
+    "id": "N5_Q_002",
+    "level": "N5",
+    "type": "grammar",
+    "question": "今、友達と話し＿＿います。",
+    "choices": [
+      "て",
+      "に",
+      "で",
+      "を"
+    ],
+    "answer": 0,
+    "explanation_vi": "〜ている: Vて形 + いる, diễn đạt hành động đang xảy ra. 話す → 話して.",
+    "grammar_refs": [
+      "N5_G_003"
+    ],
+    "vocab_refs": [],
+    "tags": [
+      "ている",
+      "progressive"
+    ]
+  },
+  {
+    "id": "N5_Q_003",
+    "level": "N5",
+    "type": "vocabulary",
+    "question": "「食べる」の意味はどれですか？",
+    "choices": [
+      "ăn",
+      "uống",
+      "ngủ",
+      "đi"
+    ],
+    "answer": 0,
+    "explanation_vi": "食べる (たべる) = ăn. Đây là động từ nhóm 2 (ichidan).",
+    "grammar_refs": [],
+    "vocab_refs": [
+      "N5_V_003"
+    ],
+    "tags": [
+      "vocabulary",
+      "basic"
+    ]
+  }
+]

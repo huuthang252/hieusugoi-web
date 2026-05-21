@@ -1,0 +1,41 @@
+[
+  {
+    "id": "N5_V_001",
+    "level": "N5",
+    "word": "勉強する",
+    "reading": "べんきょうする",
+    "meaning_vi": "học",
+    "part_of_speech": "verb",
+    "example_jp": "毎日日本語を勉強します。",
+    "example_reading": "まいにちにほんごをべんきょうします。",
+    "example_vi": "Tôi học tiếng Nhật mỗi ngày.",
+    "tags": ["study", "daily"],
+    "search_forms": ["勉強", "べんきょう"]
+  },
+  {
+    "id": "N5_V_002",
+    "level": "N5",
+    "word": "分かる",
+    "reading": "わかる",
+    "meaning_vi": "hiểu, biết",
+    "part_of_speech": "verb",
+    "example_jp": "日本語が少し分かります。",
+    "example_reading": "にほんごがすこしわかります。",
+    "example_vi": "Tôi hiểu tiếng Nhật một chút.",
+    "tags": ["understanding", "basic"],
+    "search_forms": ["分かる", "分かり", "分かった", "わかる"]
+  },
+  {
+    "id": "N5_V_003",
+    "level": "N5",
+    "word": "食べる",
+    "reading": "たべる",
+    "meaning_vi": "ăn",
+    "part_of_speech": "verb",
+    "example_jp": "朝ご飯を食べます。",
+    "example_reading": "あさごはんをたべます。",
+    "example_vi": "Tôi ăn sáng.",
+    "tags": ["daily", "food"],
+    "search_forms": ["食べ", "たべ"]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "level": "N4",
+  "vocabulary": [
+    { "kanji": "経験", "reading": "けいけん", "meaning_vi": "kinh nghiệm" },
+    { "kanji": "準備", "reading": "じゅんび", "meaning_vi": "chuẩn bị" },
+    { "kanji": "説明", "reading": "せつめい", "meaning_vi": "giải thích" }
+  ],
+  "grammar": [
+    {
+      "pattern": "〜てしまう",
+      "meaning_vi": "Lỡ làm / Đã hoàn thành (có nuối tiếc)",
+      "example": "宿題をしてしまった。"
+    },
+    {
+      "pattern": "〜ようにする",
+      "meaning_vi": "Cố gắng để… (thói quen, nỗ lực)",
+      "example": "早く寝るようにする。"
+    },
+    {
+      "pattern": "〜らしい",
+      "meaning_vi": "Có vẻ / Nghe nói… (suy đoán từ bằng chứng)",
+      "example": "彼女は先生らしい。"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "早く寝る＿＿する。",
+      "choices": ["ようで", "ように", "ような", "ようは"],
+      "answer": 1,
+      "explanation_vi": "〜ようにする = cố gắng để làm gì đó, diễn đạt nỗ lực thay đổi thói quen."
+    }
+  ]
+}

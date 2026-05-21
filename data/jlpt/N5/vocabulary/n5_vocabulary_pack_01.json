@@ -1,0 +1,671 @@
+[
+  {
+    "id": "N5_V_101",
+    "level": "N5",
+    "word": "学校",
+    "reading": "がっこう",
+    "meaning_vi": "trường học",
+    "part_of_speech": "noun",
+    "example_jp": "毎日学校に行きます。",
+    "example_reading": "まいにちがっこうにいきます。",
+    "example_vi": "Mỗi ngày tôi đi học.",
+    "tags": [
+      "place",
+      "education",
+      "basic"
+    ],
+    "search_forms": [
+      "学校"
+    ]
+  },
+  {
+    "id": "N5_V_102",
+    "level": "N5",
+    "word": "先生",
+    "reading": "せんせい",
+    "meaning_vi": "giáo viên, thầy/cô giáo",
+    "part_of_speech": "noun",
+    "example_jp": "田中先生はやさしいです。",
+    "example_reading": "たなかせんせいはやさしいです。",
+    "example_vi": "Thầy Tanaka rất hiền.",
+    "tags": [
+      "person",
+      "education",
+      "basic"
+    ],
+    "search_forms": [
+      "先生"
+    ]
+  },
+  {
+    "id": "N5_V_103",
+    "level": "N5",
+    "word": "学生",
+    "reading": "がくせい",
+    "meaning_vi": "học sinh, sinh viên",
+    "part_of_speech": "noun",
+    "example_jp": "私は大学の学生です。",
+    "example_reading": "わたしはだいがくのがくせいです。",
+    "example_vi": "Tôi là sinh viên đại học.",
+    "tags": [
+      "person",
+      "education",
+      "basic"
+    ],
+    "search_forms": [
+      "学生"
+    ]
+  },
+  {
+    "id": "N5_V_104",
+    "level": "N5",
+    "word": "本",
+    "reading": "ほん",
+    "meaning_vi": "sách",
+    "part_of_speech": "noun",
+    "example_jp": "図書館で本を借りました。",
+    "example_reading": "としょかんでほんをかりました。",
+    "example_vi": "Tôi đã mượn sách ở thư viện.",
+    "tags": [
+      "object",
+      "education",
+      "basic"
+    ],
+    "search_forms": [
+      "この本",
+      "その本",
+      "本を",
+      "本が",
+      "本は",
+      "本で"
+    ]
+  },
+  {
+    "id": "N5_V_105",
+    "level": "N5",
+    "word": "水",
+    "reading": "みず",
+    "meaning_vi": "nước",
+    "part_of_speech": "noun",
+    "example_jp": "暑いので水を飲みたいです。",
+    "example_reading": "あついのでみずをのみたいです。",
+    "example_vi": "Vì trời nóng nên tôi muốn uống nước.",
+    "tags": [
+      "drink",
+      "daily",
+      "basic"
+    ],
+    "search_forms": [
+      "水を",
+      "水が",
+      "水は",
+      "お水"
+    ]
+  },
+  {
+    "id": "N5_V_106",
+    "level": "N5",
+    "word": "飲む",
+    "reading": "のむ",
+    "meaning_vi": "uống",
+    "part_of_speech": "verb",
+    "example_jp": "朝、コーヒーを飲みます。",
+    "example_reading": "あさ、こーひーをのみます。",
+    "example_vi": "Buổi sáng tôi uống cà phê.",
+    "tags": [
+      "action",
+      "daily",
+      "basic"
+    ],
+    "search_forms": [
+      "飲む",
+      "飲み",
+      "飲んで",
+      "飲みます",
+      "飲みました",
+      "のみます"
+    ]
+  },
+  {
+    "id": "N5_V_107",
+    "level": "N5",
+    "word": "見る",
+    "reading": "みる",
+    "meaning_vi": "xem, nhìn",
+    "part_of_speech": "verb",
+    "example_jp": "夜、テレビを見ます。",
+    "example_reading": "よる、てれびをみます。",
+    "example_vi": "Buổi tối tôi xem TV.",
+    "tags": [
+      "action",
+      "daily",
+      "basic"
+    ],
+    "search_forms": [
+      "見る",
+      "見て",
+      "見ます",
+      "見ました",
+      "みます",
+      "みました"
+    ]
+  },
+  {
+    "id": "N5_V_108",
+    "level": "N5",
+    "word": "聞く",
+    "reading": "きく",
+    "meaning_vi": "nghe; hỏi",
+    "part_of_speech": "verb",
+    "example_jp": "音楽を聞くのが好きです。",
+    "example_reading": "おんがくをきくのがすきです。",
+    "example_vi": "Tôi thích nghe nhạc.",
+    "tags": [
+      "action",
+      "daily",
+      "basic"
+    ],
+    "search_forms": [
+      "聞く",
+      "聞き",
+      "聞いて",
+      "聞きます",
+      "聞きました",
+      "ききます"
+    ]
+  },
+  {
+    "id": "N5_V_109",
+    "level": "N5",
+    "word": "話す",
+    "reading": "はなす",
+    "meaning_vi": "nói, nói chuyện",
+    "part_of_speech": "verb",
+    "example_jp": "日本語で話してください。",
+    "example_reading": "にほんごではなしてください。",
+    "example_vi": "Xin hãy nói bằng tiếng Nhật.",
+    "tags": [
+      "action",
+      "communication",
+      "basic"
+    ],
+    "search_forms": [
+      "話す",
+      "話し",
+      "話して",
+      "話します",
+      "話しました",
+      "はなします"
+    ]
+  },
+  {
+    "id": "N5_V_110",
+    "level": "N5",
+    "word": "書く",
+    "reading": "かく",
+    "meaning_vi": "viết",
+    "part_of_speech": "verb",
+    "example_jp": "ノートに答えを書いてください。",
+    "example_reading": "のーとにこたえをかいてください。",
+    "example_vi": "Xin hãy viết câu trả lời vào vở.",
+    "tags": [
+      "action",
+      "study",
+      "basic"
+    ],
+    "search_forms": [
+      "書く",
+      "書き",
+      "書いて",
+      "書きます",
+      "書きました",
+      "かきます"
+    ]
+  },
+  {
+    "id": "N5_V_111",
+    "level": "N5",
+    "word": "読む",
+    "reading": "よむ",
+    "meaning_vi": "đọc",
+    "part_of_speech": "verb",
+    "example_jp": "毎晩、本を読みます。",
+    "example_reading": "まいばん、ほんをよみます。",
+    "example_vi": "Mỗi tối tôi đọc sách.",
+    "tags": [
+      "action",
+      "study",
+      "basic"
+    ],
+    "search_forms": [
+      "読む",
+      "読み",
+      "読んで",
+      "読みます",
+      "読みました",
+      "よみます"
+    ]
+  },
+  {
+    "id": "N5_V_112",
+    "level": "N5",
+    "word": "行く",
+    "reading": "いく",
+    "meaning_vi": "đi (đến nơi khác)",
+    "part_of_speech": "verb",
+    "example_jp": "明日、東京に行きます。",
+    "example_reading": "あした、とうきょうにいきます。",
+    "example_vi": "Ngày mai tôi đi Tokyo.",
+    "tags": [
+      "movement",
+      "basic"
+    ],
+    "search_forms": [
+      "行く",
+      "行き",
+      "行って",
+      "行きます",
+      "行きました",
+      "いきます",
+      "いきました"
+    ]
+  },
+  {
+    "id": "N5_V_113",
+    "level": "N5",
+    "word": "来る",
+    "reading": "くる",
+    "meaning_vi": "đến, lại (đến nơi người nói)",
+    "part_of_speech": "verb",
+    "example_jp": "友達が家に来ました。",
+    "example_reading": "ともだちがいえにきました。",
+    "example_vi": "Bạn tôi đã đến nhà.",
+    "tags": [
+      "movement",
+      "basic"
+    ],
+    "search_forms": [
+      "来る",
+      "来て",
+      "来ます",
+      "来ました",
+      "きます",
+      "きました"
+    ]
+  },
+  {
+    "id": "N5_V_114",
+    "level": "N5",
+    "word": "帰る",
+    "reading": "かえる",
+    "meaning_vi": "về, trở về",
+    "part_of_speech": "verb",
+    "example_jp": "今日は早く家に帰ります。",
+    "example_reading": "きょうははやくいえにかえります。",
+    "example_vi": "Hôm nay tôi về nhà sớm.",
+    "tags": [
+      "movement",
+      "daily",
+      "basic"
+    ],
+    "search_forms": [
+      "帰る",
+      "帰り",
+      "帰って",
+      "帰ります",
+      "帰りました",
+      "かえります"
+    ]
+  },
+  {
+    "id": "N5_V_115",
+    "level": "N5",
+    "word": "買う",
+    "reading": "かう",
+    "meaning_vi": "mua",
+    "part_of_speech": "verb",
+    "example_jp": "スーパーで野菜を買いました。",
+    "example_reading": "すーぱーでやさいをかいました。",
+    "example_vi": "Tôi đã mua rau ở siêu thị.",
+    "tags": [
+      "action",
+      "shopping",
+      "basic"
+    ],
+    "search_forms": [
+      "買う",
+      "買い",
+      "買って",
+      "買います",
+      "買いました",
+      "かいます"
+    ]
+  },
+  {
+    "id": "N5_V_116",
+    "level": "N5",
+    "word": "会う",
+    "reading": "あう",
+    "meaning_vi": "gặp, gặp gỡ",
+    "part_of_speech": "verb",
+    "example_jp": "昨日、駅で田中さんに会いました。",
+    "example_reading": "きのう、えきでたなかさんにあいました。",
+    "example_vi": "Hôm qua tôi đã gặp anh Tanaka ở ga.",
+    "tags": [
+      "action",
+      "social",
+      "basic"
+    ],
+    "search_forms": [
+      "会う",
+      "会い",
+      "会って",
+      "会います",
+      "会いました",
+      "あいました"
+    ]
+  },
+  {
+    "id": "N5_V_117",
+    "level": "N5",
+    "word": "大きい",
+    "reading": "おおきい",
+    "meaning_vi": "to, lớn",
+    "part_of_speech": "adjective",
+    "example_jp": "この犬はとても大きいです。",
+    "example_reading": "このいぬはとてもおおきいです。",
+    "example_vi": "Con chó này rất to.",
+    "tags": [
+      "adjective",
+      "size",
+      "basic"
+    ],
+    "search_forms": [
+      "大きい",
+      "大きな",
+      "大きく",
+      "おおきい",
+      "おおきな"
+    ]
+  },
+  {
+    "id": "N5_V_118",
+    "level": "N5",
+    "word": "小さい",
+    "reading": "ちいさい",
+    "meaning_vi": "nhỏ, bé",
+    "part_of_speech": "adjective",
+    "example_jp": "この部屋は少し小さいです。",
+    "example_reading": "このへやはすこしちいさいです。",
+    "example_vi": "Căn phòng này hơi nhỏ.",
+    "tags": [
+      "adjective",
+      "size",
+      "basic"
+    ],
+    "search_forms": [
+      "小さい",
+      "小さな",
+      "小さく",
+      "ちいさい",
+      "ちいさな"
+    ]
+  },
+  {
+    "id": "N5_V_119",
+    "level": "N5",
+    "word": "高い",
+    "reading": "たかい",
+    "meaning_vi": "cao; đắt",
+    "part_of_speech": "adjective",
+    "example_jp": "このレストランは少し高いです。",
+    "example_reading": "このれすとらんはすこしたかいです。",
+    "example_vi": "Nhà hàng này hơi đắt.",
+    "tags": [
+      "adjective",
+      "price",
+      "height",
+      "basic"
+    ],
+    "search_forms": [
+      "高い",
+      "高く",
+      "高くて",
+      "たかい",
+      "たかくて"
+    ]
+  },
+  {
+    "id": "N5_V_120",
+    "level": "N5",
+    "word": "安い",
+    "reading": "やすい",
+    "meaning_vi": "rẻ",
+    "part_of_speech": "adjective",
+    "example_jp": "このお店の食べ物はとても安いです。",
+    "example_reading": "このおみせのたべものはとてもやすいです。",
+    "example_vi": "Đồ ăn ở cửa hàng này rất rẻ.",
+    "tags": [
+      "adjective",
+      "price",
+      "basic"
+    ],
+    "search_forms": [
+      "安い",
+      "安く",
+      "安くて",
+      "やすい",
+      "やすくて"
+    ]
+  },
+  {
+    "id": "N5_V_121",
+    "level": "N5",
+    "word": "好き",
+    "reading": "すき",
+    "meaning_vi": "thích",
+    "part_of_speech": "adjective",
+    "example_jp": "私はラーメンが好きです。",
+    "example_reading": "わたしはらーめんがすきです。",
+    "example_vi": "Tôi thích mì ramen.",
+    "tags": [
+      "adjective",
+      "feeling",
+      "basic"
+    ],
+    "search_forms": [
+      "好き",
+      "好きです",
+      "好きな",
+      "が好き",
+      "すきです",
+      "すきな"
+    ]
+  },
+  {
+    "id": "N5_V_122",
+    "level": "N5",
+    "word": "嫌い",
+    "reading": "きらい",
+    "meaning_vi": "ghét, không thích",
+    "part_of_speech": "adjective",
+    "example_jp": "私は蜘蛛が嫌いです。",
+    "example_reading": "わたしはくもがきらいです。",
+    "example_vi": "Tôi ghét nhện.",
+    "tags": [
+      "adjective",
+      "feeling",
+      "basic"
+    ],
+    "search_forms": [
+      "嫌い",
+      "嫌いです",
+      "嫌いな",
+      "が嫌い",
+      "きらいです"
+    ]
+  },
+  {
+    "id": "N5_V_123",
+    "level": "N5",
+    "word": "友達",
+    "reading": "ともだち",
+    "meaning_vi": "bạn bè",
+    "part_of_speech": "noun",
+    "example_jp": "友達と一緒に映画を見ました。",
+    "example_reading": "ともだちといっしょにえいがをみました。",
+    "example_vi": "Tôi đã xem phim cùng bạn bè.",
+    "tags": [
+      "person",
+      "social",
+      "basic"
+    ],
+    "search_forms": [
+      "友達",
+      "ともだち"
+    ]
+  },
+  {
+    "id": "N5_V_124",
+    "level": "N5",
+    "word": "家族",
+    "reading": "かぞく",
+    "meaning_vi": "gia đình",
+    "part_of_speech": "noun",
+    "example_jp": "週末は家族と公園に行きます。",
+    "example_reading": "しゅうまつはかぞくとこうえんにいきます。",
+    "example_vi": "Cuối tuần tôi đi công viên với gia đình.",
+    "tags": [
+      "person",
+      "family",
+      "basic"
+    ],
+    "search_forms": [
+      "家族",
+      "かぞく"
+    ]
+  },
+  {
+    "id": "N5_V_125",
+    "level": "N5",
+    "word": "仕事",
+    "reading": "しごと",
+    "meaning_vi": "công việc, việc làm",
+    "part_of_speech": "noun",
+    "example_jp": "今日は仕事が忙しかったです。",
+    "example_reading": "きょうはしごとがいそがしかったです。",
+    "example_vi": "Hôm nay công việc bận rộn.",
+    "tags": [
+      "work",
+      "daily",
+      "basic"
+    ],
+    "search_forms": [
+      "仕事",
+      "しごと"
+    ]
+  },
+  {
+    "id": "N5_V_126",
+    "level": "N5",
+    "word": "時間",
+    "reading": "じかん",
+    "meaning_vi": "thời gian; giờ đồng hồ",
+    "part_of_speech": "noun",
+    "example_jp": "今、少し時間がありますか。",
+    "example_reading": "いま、すこしじかんがありますか。",
+    "example_vi": "Bây giờ bạn có ít thời gian không?",
+    "tags": [
+      "time",
+      "basic"
+    ],
+    "search_forms": [
+      "時間",
+      "じかん"
+    ]
+  },
+  {
+    "id": "N5_V_127",
+    "level": "N5",
+    "word": "今日",
+    "reading": "きょう",
+    "meaning_vi": "hôm nay",
+    "part_of_speech": "noun",
+    "example_jp": "今日は天気がいいですね。",
+    "example_reading": "きょうはてんきがいいですね。",
+    "example_vi": "Hôm nay thời tiết đẹp nhỉ.",
+    "tags": [
+      "time",
+      "daily",
+      "basic"
+    ],
+    "search_forms": [
+      "今日",
+      "きょう"
+    ]
+  },
+  {
+    "id": "N5_V_128",
+    "level": "N5",
+    "word": "明日",
+    "reading": "あした",
+    "meaning_vi": "ngày mai",
+    "part_of_speech": "noun",
+    "example_jp": "明日は早く起きます。",
+    "example_reading": "あしたははやくおきます。",
+    "example_vi": "Ngày mai tôi dậy sớm.",
+    "tags": [
+      "time",
+      "daily",
+      "basic"
+    ],
+    "search_forms": [
+      "明日",
+      "あした",
+      "あす"
+    ]
+  },
+  {
+    "id": "N5_V_129",
+    "level": "N5",
+    "word": "昨日",
+    "reading": "きのう",
+    "meaning_vi": "hôm qua",
+    "part_of_speech": "noun",
+    "example_jp": "昨日は雨でした。",
+    "example_reading": "きのうはあめでした。",
+    "example_vi": "Hôm qua trời mưa.",
+    "tags": [
+      "time",
+      "daily",
+      "basic"
+    ],
+    "search_forms": [
+      "昨日",
+      "きのう"
+    ]
+  },
+  {
+    "id": "N5_V_130",
+    "level": "N5",
+    "word": "何",
+    "reading": "なに / なん",
+    "meaning_vi": "cái gì, điều gì",
+    "part_of_speech": "noun",
+    "example_jp": "今日の昼ごはんは何ですか。",
+    "example_reading": "きょうのひるごはんはなんですか。",
+    "example_vi": "Bữa trưa hôm nay là gì?",
+    "tags": [
+      "question",
+      "basic"
+    ],
+    "search_forms": [
+      "何",
+      "なに",
+      "なん",
+      "何を",
+      "何が",
+      "何ですか"
+    ]
+  }
+]

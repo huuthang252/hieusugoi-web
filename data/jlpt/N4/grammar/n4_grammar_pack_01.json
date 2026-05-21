@@ -1,0 +1,176 @@
+[
+  {
+    "id": "N4_G_001",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "pattern": "〜てみる",
+    "meaning_vi": "thử làm gì (thử nghiệm, xem kết quả ra sao)",
+    "formation": "Vて形 + みる",
+    "example_jp": "この料理を一度食べてみてください。",
+    "example_reading": "このりょうりをいちどたべてみてください。",
+    "example_vi": "Hãy thử ăn món này một lần xem sao.",
+    "tags": [
+      "te_form",
+      "attempt",
+      "daily"
+    ],
+    "search_forms": [
+      "てみる",
+      "てみます",
+      "てみた",
+      "てみました",
+      "てみて",
+      "てみない",
+      "てみれば",
+      "でみる",
+      "でみた"
+    ],
+    "related_grammar": [
+      "N4_G_002",
+      "N5_G_106"
+    ],
+    "register": "neutral",
+    "difficulty_score": 2.0,
+    "notes_vi": "Khác 〜てください (yêu cầu): 〜てみる mang nghĩa tự nguyện thử nghiệm."
+  },
+  {
+    "id": "N4_G_002",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "pattern": "〜ようになる",
+    "meaning_vi": "trở nên có thể / dần dần trở thành (diễn đạt sự biến đổi trạng thái)",
+    "formation": "V辞書形 / V否定形 (〜ない) + ようになる",
+    "example_jp": "練習を続けて、日本語で話せるようになりました。",
+    "example_reading": "れんしゅうをつづけて、にほんごではなせるようになりました。",
+    "example_vi": "Nhờ tiếp tục luyện tập, tôi đã có thể nói được tiếng Nhật.",
+    "tags": [
+      "change_of_state",
+      "potential",
+      "result"
+    ],
+    "search_forms": [
+      "ようになる",
+      "ようになります",
+      "ようになった",
+      "ようになりました",
+      "ようになって",
+      "ようになれ"
+    ],
+    "related_grammar": [
+      "N4_G_001",
+      "N4_G_003"
+    ],
+    "register": "neutral",
+    "difficulty_score": 2.5,
+    "notes_vi": "Khác 〜ようにする (nỗ lực để đạt được): 〜ようになる là kết quả đã xảy ra, không do ý chí.",
+    "alt_meaning_vi": "Dạng phủ định: 〜ないようになる = trở nên không còn làm gì nữa."
+  },
+  {
+    "id": "N4_G_003",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "pattern": "〜ことができる",
+    "meaning_vi": "có thể làm gì (diễn đạt khả năng, trang trọng hơn potential form)",
+    "formation": "V辞書形 + ことができる",
+    "example_jp": "私は自転車を修理することができます。",
+    "example_reading": "わたしはじてんしゃをしゅうりすることができます。",
+    "example_vi": "Tôi có thể sửa xe đạp.",
+    "tags": [
+      "ability",
+      "potential",
+      "formal"
+    ],
+    "search_forms": [
+      "ことができる",
+      "ことができます",
+      "ことができない",
+      "ことができません",
+      "ことができた",
+      "ことができました",
+      "ことができれば"
+    ],
+    "related_grammar": [
+      "N4_G_002",
+      "N5_G_102"
+    ],
+    "register": "formal",
+    "difficulty_score": 2.1,
+    "notes_vi": "Trang trọng hơn potential form (〜られる/〜える). Thường dùng trong văn viết hoặc lời thoại trang trọng."
+  },
+  {
+    "id": "N4_G_004",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "pattern": "〜なければならない",
+    "meaning_vi": "phải làm gì (bắt buộc, nghĩa vụ)",
+    "formation": "V否定形 (ない → なけ) + ればならない / ればなりません",
+    "example_jp": "明日は早く起きなければなりません。",
+    "example_reading": "あしたははやくおきなければなりません。",
+    "example_vi": "Ngày mai tôi phải dậy sớm.",
+    "tags": [
+      "obligation",
+      "must",
+      "formal"
+    ],
+    "search_forms": [
+      "なければならない",
+      "なければなりません",
+      "なければいけない",
+      "なければいけません",
+      "なきゃならない",
+      "なきゃいけない",
+      "なきゃ"
+    ],
+    "related_grammar": [
+      "N5_G_108",
+      "N4_G_003"
+    ],
+    "register": "neutral",
+    "difficulty_score": 2.8,
+    "notes_vi": "なきゃ là dạng rút gọn thường dùng trong hội thoại. なければいけない cũng phổ biến ngang nhau.",
+    "alt_meaning_vi": "Phủ định của 〜なければならない: 〜なくてもいい (không cần phải làm)."
+  },
+  {
+    "id": "N4_G_005",
+    "level": "N4",
+    "schema_version": 2,
+    "created_at": "2026-05-21",
+    "pattern": "〜てしまう",
+    "meaning_vi": "đã làm xong / lỡ làm rồi (hoàn thành, thường có sắc thái tiếc nuối hoặc không chủ ý)",
+    "formation": "Vて形 + しまう (dạng thân mật: 〜ちゃう / 〜じゃう)",
+    "example_jp": "試験の日を忘れてしまいました。",
+    "example_reading": "しけんのひをわすれてしまいました。",
+    "example_vi": "Tôi đã lỡ quên mất ngày thi rồi.",
+    "tags": [
+      "completion",
+      "regret",
+      "unintentional",
+      "te_form"
+    ],
+    "search_forms": [
+      "てしまう",
+      "てしまいます",
+      "てしまった",
+      "てしまいました",
+      "てしまって",
+      "ちゃう",
+      "ちゃった",
+      "ちゃいました",
+      "でしまう",
+      "でしまった",
+      "じゃう",
+      "じゃった"
+    ],
+    "related_grammar": [
+      "N5_G_104",
+      "N4_G_001"
+    ],
+    "register": "neutral",
+    "difficulty_score": 2.3,
+    "notes_vi": "Hai nghĩa chính: (1) hoàn thành dứt khoát, (2) vô tình/tiếc nuối. Context quyết định nghĩa."
+  }
+]

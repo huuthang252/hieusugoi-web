@@ -1,0 +1,8 @@
+installer/
+*.exe
+dist/
+build/
+__pycache__/
+*.pyc
+.env
+.env.local

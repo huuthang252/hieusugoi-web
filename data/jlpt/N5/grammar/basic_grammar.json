@@ -1,0 +1,41 @@
+[
+  {
+    "id": "N5_G_001",
+    "level": "N5",
+    "pattern": "〜たい",
+    "meaning_vi": "muốn làm gì",
+    "formation": "Vます bỏ ます + たい",
+    "example_jp": "日本語を勉強したいです。",
+    "example_reading": "にほんごをべんきょうしたいです。",
+    "example_vi": "Tôi muốn học tiếng Nhật.",
+    "tags": ["desire", "basic"],
+    "related_grammar": ["N5_G_002", "N5_G_003"],
+    "search_forms": ["たい", "たいです", "たくない", "たかった"]
+  },
+  {
+    "id": "N5_G_002",
+    "level": "N5",
+    "pattern": "〜てください",
+    "meaning_vi": "xin hãy làm / hãy làm…",
+    "formation": "Vて形 + ください",
+    "example_jp": "もう一度言ってください。",
+    "example_reading": "もういちどいってください。",
+    "example_vi": "Xin hãy nói lại một lần nữa.",
+    "tags": ["request", "basic"],
+    "related_grammar": ["N5_G_003", "N5_G_001"],
+    "search_forms": ["てください", "でください"]
+  },
+  {
+    "id": "N5_G_003",
+    "level": "N5",
+    "pattern": "〜ている",
+    "meaning_vi": "đang làm gì (hành động tiếp diễn)",
+    "formation": "Vて形 + いる",
+    "example_jp": "今、日本語を勉強しています。",
+    "example_reading": "いま、にほんごをべんきょうしています。",
+    "example_vi": "Bây giờ tôi đang học tiếng Nhật.",
+    "tags": ["progressive", "basic"],
+    "related_grammar": ["N5_G_001", "N5_G_002"],
+    "search_forms": ["ている", "でいる", "ています", "でいます"]
+  }
+]

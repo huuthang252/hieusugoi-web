@@ -1,0 +1,33 @@
+{
+  "level": "N3",
+  "vocabulary": [
+    { "kanji": "状況", "reading": "じょうきょう", "meaning_vi": "tình huống" },
+    { "kanji": "目的", "reading": "もくてき",     "meaning_vi": "mục đích" },
+    { "kanji": "現実", "reading": "げんじつ",     "meaning_vi": "thực tế" }
+  ],
+  "grammar": [
+    {
+      "pattern": "〜に対して",
+      "meaning_vi": "Đối với… (thái độ, hành động hướng tới đối tượng)",
+      "example": "環境問題に対して取り組む。"
+    },
+    {
+      "pattern": "〜ほど〜ない",
+      "meaning_vi": "Không… bằng (so sánh mức độ thấp hơn)",
+      "example": "昨日ほど寒くない。"
+    },
+    {
+      "pattern": "〜だけでなく",
+      "meaning_vi": "Không chỉ… mà còn… (liệt kê bổ sung)",
+      "example": "英語だけでなく日本語も話せる。"
+    }
+  ],
+  "quiz": [
+    {
+      "question": "彼女は私＿＿背が高い。",
+      "choices": ["ほど", "だけ", "しか", "まで"],
+      "answer": 0,
+      "explanation_vi": "〜ほど + phủ định: không bằng. VD: 私ほど背が高くない = không cao bằng tôi. Câu này thiếu phủ định nên câu hỏi hàm ý 'cao hơn tôi'."
+    }
+  ]
+}

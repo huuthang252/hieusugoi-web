@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!--
+        Hieusugoi v2.2.1 macOS — entitlements
+        Quyền Accessibility được user cấp thủ công qua System Settings.
+        App KHÔNG dùng OCR / screen capture.
+    -->
+
+    <!-- Cho phép gửi Apple Events (cần cho pynput keyboard simulation) -->
+    <key>com.apple.security.automation.apple-events</key>
+    <true/>
+
+    <!-- Hardened runtime: cho phép load unsigned executable memory (PyInstaller) -->
+    <key>com.apple.security.cs.allow-unsigned-executable-memory</key>
+    <true/>
+
+    <!-- Hardened runtime: cho phép disable library validation (PyQt5, pynput) -->
+    <key>com.apple.security.cs.disable-library-validation</key>
+    <true/>
+</dict>
+</plist>
