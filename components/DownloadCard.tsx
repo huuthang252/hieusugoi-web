@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const DOWNLOAD_URL =
-  "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.0/Hieusugoi_Setup_v2.1.0.exe";
+  "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.1/Hieusugoi_Setup_v2.1.1.exe";
 
 export default function DownloadCard() {
   return (
@@ -32,9 +32,9 @@ export default function DownloadCard() {
       <div className="text-5xl font-bold mb-6">Hieusugoi</div>
 
       {/* VERSION */}
-      <div className="text-cyan-300 text-2xl mb-2">Version 2.1.0</div>
+      <div className="text-cyan-300 text-2xl mb-2">Version 2.1.1</div>
       <div className="text-cyan-200 text-sm mb-10">
-        Latest version: v2.1.0
+        Latest version: v2.1.1
       </div>
 
       {/* PLATFORM */}
@@ -62,7 +62,7 @@ export default function DownloadCard() {
           shadow-xl
         "
       >
-        Download Hieusugoi v2.1.0
+        Download Hieusugoi v2.1.1
       </motion.a>
 
       {/* FEATURES */}
@@ -75,11 +75,11 @@ export default function DownloadCard() {
         text-white/60
         text-sm
       ">
-        <div>• AI OCR Overlay</div>
-        <div>• Chat với Hieusugoi</div>
         <div>• AI Translation</div>
-        <div>• Notes Workspace</div>
+        <div>• Chat với Hieusugoi</div>
         <div>• AI Voice (TTS)</div>
+        <div>• Notes Workspace</div>
+        <div>• Hiragana Reading</div>
         <div>• Local Cache</div>
       </div>
     </motion.div>

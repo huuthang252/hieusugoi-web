@@ -5,22 +5,24 @@ import { isEmailConfirmed } from "@/lib/profile";
 export const dynamic = "force-dynamic";
 
 const DOWNLOAD_URL =
-  "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.0/Hieusugoi_Setup_v2.1.0.exe";
+  "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.1/Hieusugoi_Setup_v2.1.1.exe";
 
 const RELEASE_NOTES = [
-  "Thêm tính năng Chat với Hieusugoi (trợ lý AI)",
-  "Thêm Ghi Chú — không gian ghi chú cá nhân",
-  "Cải thiện giao diện đồng bộ toàn app",
+  "Sửa lỗi Kanji tiếng Nhật bị hiển thị cách đọc tiếng Trung/pinyin",
+  "Cải thiện hiển thị Hiragana ổn định hơn cho Kanji-only text",
+  "Xóa Chinese khỏi danh sách ngôn ngữ đích, thêm Russian",
+  "Vietnamese là ngôn ngữ mặc định",
+  "Loại bỏ OCR/Tesseract không còn dùng — installer giảm xuống ~55 MB",
 ];
 
 const VERSIONS = [
   {
     badge: "Latest Version",
-    version: "2.1.0",
-    filename: "Hieusugoi_Setup_v2.1.0.exe",
+    version: "2.1.1",
+    filename: "Hieusugoi_Setup_v2.1.1.exe",
     description:
       "Phiên bản chính thức mới nhất. Yêu cầu đăng nhập tài khoản.",
-    buttonText: "Download Hieusugoi v2.1.0",
+    buttonText: "Download Hieusugoi v2.1.1",
     url: DOWNLOAD_URL,
     buttonClass:
       "inline-block rounded-full bg-cyan-300 px-10 py-4 text-lg font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.4)] transition hover:scale-105 hover:shadow-[0_0_40px_rgba(64,233,255,0.6)]",
@@ -95,10 +97,10 @@ export default async function DownloadPage() {
               </a>
 
               {/* Release notes — only shown for the latest version entry */}
-              {v.version === "2.1.0" && (
+              {v.version === "2.1.1" && (
                 <div className="mt-8 rounded-xl border border-white/10 bg-white/5 px-6 py-5 text-left">
                   <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
-                    Có gì mới trong v2.1.0
+                    Có gì mới trong v2.1.1
                   </p>
                   <ul className="space-y-1">
                     {RELEASE_NOTES.map((note) => (
