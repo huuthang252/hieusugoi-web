@@ -4,8 +4,7 @@ import { isEmailConfirmed } from "@/lib/profile";
 
 export const dynamic = "force-dynamic";
 
-const DOWNLOAD_URL =
-  "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.1/Hieusugoi_Setup_v2.1.1.exe";
+const DOWNLOAD_URL = "/api/download?version=2.1.1";
 
 const RELEASE_NOTES = [
   "Chỉ bôi đen từ, hệ thống nhận biết ngôn ngữ tự động",

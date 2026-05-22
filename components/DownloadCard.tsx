@@ -2,8 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const DOWNLOAD_URL =
-  "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.1/Hieusugoi_Setup_v2.1.1.exe";
+const DOWNLOAD_URL = "/api/download?version=2.1.1";
 
 export default function DownloadCard() {
   return (

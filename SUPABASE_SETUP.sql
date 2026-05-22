@@ -117,6 +117,33 @@ SELECT user_id, username, email, plan, status FROM profiles LIMIT 10;
 SELECT id, email, email_confirmed_at, raw_user_meta_data FROM auth.users LIMIT 10;
 
 -- ============================================
+-- Download Logs Table
+-- ============================================
+
+CREATE TABLE IF NOT EXISTS download_logs (
+  id BIGSERIAL PRIMARY KEY,
+  user_id UUID REFERENCES auth.users(id) ON DELETE SET NULL,
+  email TEXT,
+  version TEXT NOT NULL,
+  file_name TEXT,
+  download_url TEXT,
+  downloaded_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  ip_address TEXT,
+  user_agent TEXT
+);
+
+-- Only service role can insert/select (no user-facing RLS needed)
+ALTER TABLE download_logs ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Service role full access on download_logs"
+  ON download_logs
+  USING (false)
+  WITH CHECK (false);
+
+CREATE INDEX IF NOT EXISTS download_logs_user_id_idx ON download_logs(user_id);
+CREATE INDEX IF NOT EXISTS download_logs_downloaded_at_idx ON download_logs(downloaded_at DESC);
+
+-- ============================================
 -- Troubleshooting Queries
 -- ============================================
 
