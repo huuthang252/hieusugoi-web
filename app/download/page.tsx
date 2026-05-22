@@ -10,9 +10,7 @@ const DOWNLOAD_URL =
 const RELEASE_NOTES = [
   "Sửa lỗi Kanji tiếng Nhật bị hiển thị cách đọc tiếng Trung/pinyin",
   "Cải thiện hiển thị Hiragana ổn định hơn cho Kanji-only text",
-  "Xóa Chinese khỏi danh sách ngôn ngữ đích, thêm Russian",
-  "Vietnamese là ngôn ngữ mặc định",
-  "Loại bỏ OCR/Tesseract không còn dùng — installer giảm xuống ~55 MB",
+  "10 ngôn ngữ đích được hỗ trợ,bao gồm: Vietnam, English, Janpanese...",
 ];
 
 const VERSIONS = [
