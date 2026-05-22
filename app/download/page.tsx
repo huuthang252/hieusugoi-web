@@ -8,9 +8,10 @@ const DOWNLOAD_URL =
   "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.1/Hieusugoi_Setup_v2.1.1.exe";
 
 const RELEASE_NOTES = [
-  "Sửa lỗi Kanji tiếng Nhật bị hiển thị cách đọc tiếng Trung/pinyin",
-  "Cải thiện hiển thị Hiragana ổn định hơn cho Kanji-only text",
-  "10 ngôn ngữ đích được hỗ trợ,bao gồm: Vietnam, English, Janpanese...",
+  "Chỉ bôi đen từ, hệ thống nhận biết ngôn ngữ tự động",
+  "Trợ lý AI Hieusugoi có thể giải đáp những câu hỏi liên quan đến ngôn ngữ",
+  "Tăng tốc độ xử lý, giảm thời gian chờ đợi của người dùng",
+  "Tích hợp 10 ngôn ngữ đích, bao gồm: Vietnam, English, Janpanese...",
 ];
 
 const VERSIONS = [
