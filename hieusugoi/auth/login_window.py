@@ -40,8 +40,11 @@ def _clear_keyring_password(email: str) -> None:
         pass
 
 if getattr(sys, "frozen", False):
-    BASE_DIR = Path(sys.executable).parent
+    # PyInstaller: _MEIPASS trỏ đúng vào thư mục chứa data files (kể cả PyInstaller 6.x _internal/)
+    # sys.executable.parent chỉ trỏ đến MacOS/ — sai với PyInstaller 6.x
+    BASE_DIR = Path(getattr(sys, "_MEIPASS", Path(sys.executable).parent))
 else:
+    # python main.py: __file__ = hieusugoi/auth/login_window.py → .parent×3 = Hieusugoi_Desktop/
     BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 load_dotenv(BASE_DIR / ".env")
