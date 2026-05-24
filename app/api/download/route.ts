@@ -3,10 +3,10 @@ import { createClient } from "@supabase/supabase-js";
 import { createServerClient } from "@/lib/supabase-server";
 
 const VERSION_MAP: Record<string, { downloadUrl: string; fileName: string }> = {
-  "2.1.1": {
+  "2.1.2": {
     downloadUrl:
-      "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.1/Hieusugoi_Setup_v2.1.1.exe",
-    fileName: "Hieusugoi_Setup_v2.1.1.exe",
+      "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.2/Hieusugoi_Setup_v2.1.2.exe",
+    fileName: "Hieusugoi_Setup_v2.1.2.exe",
   },
 };
 

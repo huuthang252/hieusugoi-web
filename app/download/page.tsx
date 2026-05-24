@@ -4,7 +4,7 @@ import { isEmailConfirmed } from "@/lib/profile";
 
 export const dynamic = "force-dynamic";
 
-const DOWNLOAD_URL = "/api/download?version=2.1.1";
+const DOWNLOAD_URL = "/api/download?version=2.1.2";
 
 const RELEASE_NOTES = [
   "Chỉ bôi đen từ, hệ thống nhận biết ngôn ngữ tự động",
@@ -16,11 +16,11 @@ const RELEASE_NOTES = [
 const VERSIONS = [
   {
     badge: "Latest Version",
-    version: "2.1.1",
-    filename: "Hieusugoi_Setup_v2.1.1.exe",
+    version: "2.1.2",
+    filename: "Hieusugoi_Setup_v2.1.2.exe",
     description:
       "Phiên bản chính thức mới nhất. Yêu cầu đăng nhập tài khoản.",
-    buttonText: "Download Hieusugoi v2.1.1",
+    buttonText: "Download Hieusugoi v2.1.2",
     url: DOWNLOAD_URL,
     buttonClass:
       "inline-block rounded-full bg-cyan-300 px-10 py-4 text-lg font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.4)] transition hover:scale-105 hover:shadow-[0_0_40px_rgba(64,233,255,0.6)]",
@@ -95,10 +95,10 @@ export default async function DownloadPage() {
               </a>
 
               {/* Release notes — only shown for the latest version entry */}
-              {v.version === "2.1.1" && (
+              {v.version === "2.1.2" && (
                 <div className="mt-8 rounded-xl border border-white/10 bg-white/5 px-6 py-5 text-left">
                   <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
-                    Có gì mới trong v2.1.1
+                    Có gì mới trong v2.1.2
                   </p>
                   <ul className="space-y-1">
                     {RELEASE_NOTES.map((note) => (
