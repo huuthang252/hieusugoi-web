@@ -4,23 +4,22 @@ import { isEmailConfirmed } from "@/lib/profile";
 
 export const dynamic = "force-dynamic";
 
-const DOWNLOAD_URL = "/api/download?version=2.1.2";
+const DOWNLOAD_URL = "/api/download?version=2.1.3";
 
 const RELEASE_NOTES = [
-  "Chỉ bôi đen từ, hệ thống nhận biết ngôn ngữ tự động",
-  "Trợ lý AI Hieusugoi có thể giải đáp những câu hỏi liên quan đến ngôn ngữ",
-  "Tăng tốc độ xử lý, giảm thời gian chờ đợi của người dùng",
-  "Tích hợp 10 ngôn ngữ đích, bao gồm: Vietnam, English, Janpanese...",
+  "Kết hợp đồng thời OCR và Mouse Polling để tăng độ ổn định khi nhận diện văn bản",
+  "Hệ thống tự động chuyển đổi giữa OCR và Copy mode tùy theo trạng thái màn hình",
+  "Giảm độ trễ khi dịch và cải thiện phản hồi khi bôi đen văn bản",
 ];
 
 const VERSIONS = [
   {
     badge: "Latest Version",
-    version: "2.1.2",
-    filename: "Hieusugoi_Setup_v2.1.2.exe",
+    version: "2.1.3",
+    filename: "Hieusugoi_Setup_v2.1.3.exe",
     description:
       "Phiên bản chính thức mới nhất. Yêu cầu đăng nhập tài khoản.",
-    buttonText: "Download Hieusugoi v2.1.2",
+    buttonText: "Download Hieusugoi v2.1.3",
     url: DOWNLOAD_URL,
     buttonClass:
       "inline-block rounded-full bg-cyan-300 px-10 py-4 text-lg font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.4)] transition hover:scale-105 hover:shadow-[0_0_40px_rgba(64,233,255,0.6)]",
@@ -95,10 +94,10 @@ export default async function DownloadPage() {
               </a>
 
               {/* Release notes — only shown for the latest version entry */}
-              {v.version === "2.1.2" && (
+              {v.version === "2.1.3" && (
                 <div className="mt-8 rounded-xl border border-white/10 bg-white/5 px-6 py-5 text-left">
                   <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-slate-400">
-                    Có gì mới trong v2.1.2
+                    Có gì mới trong v2.1.3
                   </p>
                   <ul className="space-y-1">
                     {RELEASE_NOTES.map((note) => (

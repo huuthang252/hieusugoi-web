@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-const DOWNLOAD_URL = "/api/download?version=2.1.2";
+const DOWNLOAD_URL = "/api/download?version=2.1.3";
 
 export default function DownloadCard() {
   return (
@@ -31,9 +31,9 @@ export default function DownloadCard() {
       <div className="text-5xl font-bold mb-6">Hieusugoi</div>
 
       {/* VERSION */}
-      <div className="text-cyan-300 text-2xl mb-2">Version 2.1.2</div>
+      <div className="text-cyan-300 text-2xl mb-2">Version 2.1.3</div>
       <div className="text-cyan-200 text-sm mb-10">
-        Latest version: v2.1.2
+        Latest version: v2.1.3
       </div>
 
       {/* PLATFORM */}
@@ -61,7 +61,7 @@ export default function DownloadCard() {
           shadow-xl
         "
       >
-        Download Hieusugoi v2.1.2
+        Download Hieusugoi v2.1.3
       </motion.a>
 
       {/* FEATURES */}
