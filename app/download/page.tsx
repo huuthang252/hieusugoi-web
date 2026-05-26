@@ -4,8 +4,6 @@ import { isEmailConfirmed } from "@/lib/profile";
 
 export const dynamic = "force-dynamic";
 
-const DOWNLOAD_URL = "/api/download?version=2.1.3";
-
 const RELEASE_NOTES = [
   "Kết hợp đồng thời OCR và Mouse Polling để tăng độ ổn định khi nhận diện văn bản",
   "Hệ thống tự động chuyển đổi giữa OCR và Copy mode tùy theo trạng thái màn hình",
@@ -20,7 +18,6 @@ const VERSIONS = [
     description:
       "Phiên bản chính thức mới nhất. Yêu cầu đăng nhập tài khoản.",
     buttonText: "Download Hieusugoi v2.1.3",
-    url: "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.3/Hieusugoi_Setup_v2.1.3.exe",
     buttonClass:
       "inline-block rounded-full bg-cyan-300 px-10 py-4 text-lg font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.4)] transition hover:scale-105 hover:shadow-[0_0_40px_rgba(64,233,255,0.6)]",
     tags: ["Windows 10/11", "64-bit", "AI Translation", "Chat"],
@@ -85,9 +82,7 @@ export default async function DownloadPage() {
               )}
 
               <a
-                href={v.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={`/api/download?version=${v.version}`}
                 className={v.buttonClass}
               >
                 {v.buttonText}
