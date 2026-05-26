@@ -43,11 +43,6 @@ QUY TẮC:
 return NextResponse.json({
   result: response.choices[0].message.content,
 });
-    
-
-    return NextResponse.json({
-      result: response.choices[0].message.content,
-    });
 
   } catch (error) {
     console.error(error);

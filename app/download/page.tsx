@@ -20,7 +20,7 @@ const VERSIONS = [
     description:
       "Phiên bản chính thức mới nhất. Yêu cầu đăng nhập tài khoản.",
     buttonText: "Download Hieusugoi v2.1.3",
-    url: DOWNLOAD_URL,
+    url: "https://github.com/huuthang252/hieusugoi-web/releases/download/v2.1.3/Hieusugoi_Setup_v2.1.3.exe",
     buttonClass:
       "inline-block rounded-full bg-cyan-300 px-10 py-4 text-lg font-semibold text-slate-950 shadow-[0_0_30px_rgba(64,233,255,0.4)] transition hover:scale-105 hover:shadow-[0_0_40px_rgba(64,233,255,0.6)]",
     tags: ["Windows 10/11", "64-bit", "AI Translation", "Chat"],
