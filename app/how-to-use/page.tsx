@@ -13,7 +13,7 @@ const videos = [
   },
   {
     title: "Cách sử dụng",
-    url: "https://www.youtube.com/embed/0GJnI7X-I8Y",
+    url: "https://www.youtube.com/embed/HeI3xD6yeyo",
   },
   {
     title: "Lưu ý",
