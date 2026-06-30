@@ -1,11 +1,19 @@
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
+import { createServerClient } from "@/lib/supabase-server";
 
 const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
 export async function POST(req: Request) {
+  // Auth gate — must be a logged-in Supabase user
+  const supabase = createServerClient();
+  const { data: { session } } = await supabase.auth.getSession();
+  if (!session?.user) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   try {
     const body = await req.json();
 

@@ -1,5 +1,6 @@
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
+import { createServerClient } from "@/lib/supabase-server";
 
 const ALLOWED_VOICES = ["nova", "onyx", "alloy", "echo", "fable", "shimmer"] as const;
 type AllowedVoice = (typeof ALLOWED_VOICES)[number];
@@ -9,6 +10,13 @@ const client = new OpenAI({
 });
 
 export async function POST(req: Request) {
+  // Auth gate — must be a logged-in Supabase user
+  const supabase = createServerClient();
+  const { data: { session } } = await supabase.auth.getSession();
+  if (!session?.user) {
+    return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  }
+
   let text: string;
   let voice: AllowedVoice = "nova";
 

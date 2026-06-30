@@ -6,6 +6,7 @@ import {
   getLicense,
   getProfile,
 } from "@/lib/profile";
+import { computeEntitlement } from "@/lib/entitlement";
 import SignOutButton from "@/components/SignOutButton";
 
 export const dynamic = "force-dynamic";
@@ -69,6 +70,17 @@ export default async function DashboardPage() {
       })
     : "N/A";
 
+  // ── 29B: Compute server-authoritative entitlement ─────────────────────────
+  const entitlement = license
+    ? computeEntitlement({
+        user_id: license.user_id,
+        plan: license.plan,
+        status: license.status,
+        trial_start: license.trial_start,
+        trial_end: license.trial_end,
+      })
+    : null;
+
   // ── Current month key ─────────────────────────────────────────────────────
   const monthKey = new Date().toISOString().slice(0, 7); // "YYYY-MM"
 
@@ -128,6 +140,60 @@ export default async function DashboardPage() {
             {profile?.username ?? userEmail}
           </p>
         </div>
+
+        {/* ── 29B: Trial Status Banner ──────────────────────────────────── */}
+        {entitlement && (
+          <section className={`rounded-3xl border p-6 backdrop-blur-xl ${
+            entitlement.trial_active
+              ? "border-cyan-400/30 bg-cyan-950/30 shadow-[0_0_25px_rgba(64,233,255,0.10)]"
+              : "border-amber-400/30 bg-amber-950/20 shadow-[0_0_25px_rgba(251,191,36,0.08)]"
+          }`}>
+            <div className="flex items-start gap-4">
+              <div className="flex-1">
+                <h2 className={`mb-1 text-xs font-bold uppercase tracking-[0.2em] ${
+                  entitlement.trial_active ? "text-cyan-300" : "text-amber-300"
+                }`}>
+                  {entitlement.trial_active ? "Free Trial Active" : "Free Trial"}
+                </h2>
+
+                {entitlement.trial_active ? (
+                  <div className="space-y-1">
+                    <p className="text-sm text-slate-300">
+                      <span className="font-bold text-cyan-200">
+                        {entitlement.trial_days_left} day{entitlement.trial_days_left !== 1 ? "s" : ""}
+                      </span>{" "}
+                      remaining — Hieusugoi is using the system AI token.
+                    </p>
+                    <p className="text-xs text-slate-500">
+                      Trial ends: {fmtShortDate(entitlement.trial_ends_at)}
+                    </p>
+                  </div>
+                ) : (
+                  <div className="space-y-2">
+                    <p className="text-sm text-amber-200/90">
+                      Your free trial has <strong>expired</strong>.
+                      AI features in the desktop app are currently disabled.
+                    </p>
+                    <p className="text-xs text-slate-400">
+                      Trial ended: {fmtShortDate(entitlement.trial_ends_at || null)}
+                      {" · "}
+                      To re-enable AI: open Settings in the desktop app and enter your OpenAI API key.
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* Plan badge */}
+              <span className={`shrink-0 rounded-full px-3 py-1 text-[11px] font-bold uppercase tracking-widest ${
+                entitlement.trial_active
+                  ? "bg-cyan-500/20 text-cyan-200"
+                  : "bg-amber-500/20 text-amber-200"
+              }`}>
+                {entitlement.trial_active ? "Trial" : "Expired"}
+              </span>
+            </div>
+          </section>
+        )}
 
         {/* ── Row 1: Account Info + Login Info ────────────────────────────── */}
         <div className="grid gap-6 md:grid-cols-2">
