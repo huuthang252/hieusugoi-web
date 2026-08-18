@@ -2,6 +2,7 @@ import OpenAI from "openai";
 import { NextResponse } from "next/server";
 import { createServerClient } from "@/lib/supabase-server";
 import { isTranslateRequestAuthenticated } from "./auth";
+import { buildCompletionRequest, extractCompletionResult } from "./completion";
 
 const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -24,31 +25,19 @@ export async function POST(req: Request) {
         { status: 400 }
       );
     }
-    const response = await client.chat.completions.create({
-  model: "gpt-4.1-mini",
-  messages: [
-    {
-      role: "system",
-      content: `
-Bạn là engine dịch thuật.
-
-QUY TẮC:
-- Chỉ trả về bản dịch tiếng Việt.
-- Không giải thích.
-- Không trò chuyện.
-- Không hỏi lại.
-- Không thêm ghi chú.
-`
-    },
-    {
-      role: "user",
-      content: text
+    const response = await client.chat.completions.create(
+      buildCompletionRequest(text, body.output_format),
+    );
+    const completion = extractCompletionResult(response, body.output_format);
+    if (!completion.ok) {
+      return NextResponse.json(
+        { error: completion.error },
+        { status: completion.status },
+      );
     }
-  ]
-});
 
 return NextResponse.json({
-  result: response.choices[0].message.content,
+  result: completion.content,
 });
 
   } catch (error) {
