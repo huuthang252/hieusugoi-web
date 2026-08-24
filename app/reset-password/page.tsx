@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import { FormEvent, useEffect, useRef, useState } from "react";
-import { createBrowserClient } from "@/lib/supabase-browser";
+import { createImplicitRecoveryClient } from "@/lib/supabase-browser";
 import {
   inspectRecoveryUrl,
+  monitorRecoverySession,
   updateRecoveredPassword,
   validateNewPassword,
 } from "@/lib/password-recovery";
@@ -17,7 +18,7 @@ export default function ResetPasswordPage() {
   const [confirmation, setConfirmation] = useState("");
   const [message, setMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
-  const clientRef = useRef<ReturnType<typeof createBrowserClient> | null>(null);
+  const clientRef = useRef<ReturnType<typeof createImplicitRecoveryClient> | null>(null);
 
   useEffect(() => {
     const linkState = inspectRecoveryUrl(window.location.href);
@@ -30,45 +31,27 @@ export default function ResetPasswordPage() {
       return () => window.clearTimeout(timer);
     }
 
-    const supabase = createBrowserClient();
+    const supabase = createImplicitRecoveryClient();
     clientRef.current = supabase;
     let active = true;
-    let validated = false;
 
-    const validateSession = async () => {
-      const { data: sessionData, error: sessionError } = await supabase.auth.getSession();
-      if (!active || sessionError || !sessionData.session) return false;
-      const { data: userData, error: userError } = await supabase.auth.getUser();
-      if (!active || userError || !userData.user) return false;
-      validated = true;
+    const monitor = monitorRecoverySession(supabase.auth, () => {
+      if (!active) return;
+      // Supabase has established the session and the Auth server verified its user.
+      // Only now remove recovery credentials from the visible URL.
       window.history.replaceState({}, "", "/reset-password");
       setPageState("ready");
-      return true;
-    };
-
-    const { data: listener } = supabase.auth.onAuthStateChange((event) => {
-      if (event === "PASSWORD_RECOVERY") {
-        void validateSession();
-      }
     });
 
     void (async () => {
-      // Supabase JS consumes implicit recovery fragments automatically. A code
-      // may also arrive when the project uses PKCE.
-      if (linkState.code) {
-        const { error } = await supabase.auth.exchangeCodeForSession(linkState.code);
-        if (error && !validated) {
-          // Initialization may have exchanged it already; validate that session.
-          if (!(await validateSession()) && active) setPageState("invalid");
-          return;
-        }
-      }
-      if (!(await validateSession()) && active) setPageState("invalid");
+      // getSession waits for this client's URL/session initialization. Do not
+      // reject the link while Supabase is still processing its callback.
+      if (!(await monitor.validate()) && active) setPageState("invalid");
     })();
 
     return () => {
       active = false;
-      listener.subscription.unsubscribe();
+      monitor.stop();
     };
   }, []);
 

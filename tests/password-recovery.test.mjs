@@ -4,6 +4,7 @@ import test from "node:test";
 
 import {
   inspectRecoveryUrl,
+  monitorRecoverySession,
   updateRecoveredPassword,
   validateNewPassword,
 } from "../lib/password-recovery.ts";
@@ -14,16 +15,15 @@ test("reset route exists", () => {
 });
 
 test("valid recovery links are recognized", () => {
-  assert.equal(
+  assert.deepEqual(
     inspectRecoveryUrl(
-      "https://www.hieusugoi.com/reset-password#access_token=a&refresh_token=b&type=recovery",
-    ).hasRecoveryIntent,
-    true,
+      "https://www.hieusugoi.com/reset-password#access_token=test-token&refresh_token=test-refresh&expires_in=3600&token_type=bearer&type=recovery",
+    ),
+    { hasRecoveryIntent: true, code: null, flow: "implicit", error: null },
   );
   assert.equal(
-    inspectRecoveryUrl("https://www.hieusugoi.com/reset-password?code=pkce-code")
-      .hasRecoveryIntent,
-    true,
+    inspectRecoveryUrl("https://www.hieusugoi.com/reset-password?code=unrelated-code").error,
+    "invalid",
   );
 });
 
@@ -38,6 +38,101 @@ test("invalid and expired recovery states are rejected", () => {
     ).error,
     "expired",
   );
+  assert.equal(
+    inspectRecoveryUrl(
+      "https://www.hieusugoi.com/reset-password#access_token=a&refresh_token=b&type=signup",
+    ).error,
+    "invalid",
+  );
+  assert.equal(
+    inspectRecoveryUrl(
+      "https://www.hieusugoi.com/reset-password#access_token=a&refresh_token=b",
+    ).error,
+    "invalid",
+  );
+});
+
+const fakeRecoveryAuth = ({ session = null, user = null, sessionPromise } = {}) => {
+  let listener = () => {};
+  let unsubscribed = false;
+  const auth = {
+    async getSession() {
+      if (sessionPromise) return sessionPromise;
+      return { data: { session }, error: null };
+    },
+    async getUser() {
+      return { data: { user }, error: null };
+    },
+    onAuthStateChange(callback) {
+      listener = callback;
+      return {
+        data: {
+          subscription: { unsubscribe: () => { unsubscribed = true; } },
+        },
+      };
+    },
+  };
+  return {
+    auth,
+    emit: (event) => listener(event),
+    wasUnsubscribed: () => unsubscribed,
+  };
+};
+
+test("valid hash recovery session enables the password form state", async () => {
+  const fake = fakeRecoveryAuth({ session: { access_token: "test-token" }, user: { id: "user" } });
+  let state = "checking";
+  const monitor = monitorRecoverySession(fake.auth, () => { state = "ready"; });
+  assert.equal(await monitor.validate(), true);
+  assert.equal(state, "ready");
+  monitor.stop();
+});
+
+test("PASSWORD_RECOVERY event validates and enables recovery state", async () => {
+  const fake = fakeRecoveryAuth({ session: { access_token: "test-token" }, user: { id: "user" } });
+  let state = "checking";
+  const monitor = monitorRecoverySession(fake.auth, () => { state = "ready"; });
+  fake.emit("PASSWORD_RECOVERY");
+  await new Promise((resolve) => setTimeout(resolve, 0));
+  assert.equal(state, "ready");
+  monitor.stop();
+  assert.equal(fake.wasUnsubscribed(), true);
+});
+
+test("session check remains pending while Supabase processes credentials", async () => {
+  let resolveSession;
+  const sessionPromise = new Promise((resolve) => { resolveSession = resolve; });
+  const fake = fakeRecoveryAuth({ sessionPromise, user: { id: "user" } });
+  let state = "checking";
+  const monitor = monitorRecoverySession(fake.auth, () => { state = "ready"; });
+  const validation = monitor.validate();
+  await Promise.resolve();
+  assert.equal(state, "checking");
+  resolveSession({ data: { session: { access_token: "test-token" } }, error: null });
+  assert.equal(await validation, true);
+  assert.equal(state, "ready");
+  monitor.stop();
+});
+
+test("invalid or failed sessions remain invalid", async () => {
+  const missing = fakeRecoveryAuth();
+  const failedUser = fakeRecoveryAuth({ session: { access_token: "test-token" } });
+  assert.equal(await monitorRecoverySession(missing.auth, () => {}).validate(), false);
+  assert.equal(await monitorRecoverySession(failedUser.auth, () => {}).validate(), false);
+});
+
+test("URL cleanup callback runs only after server-verified session", async () => {
+  const order = [];
+  const fake = fakeRecoveryAuth({ session: { access_token: "test-token" }, user: { id: "user" } });
+  const originalGetUser = fake.auth.getUser;
+  fake.auth.getUser = async () => {
+    order.push("getUser");
+    return originalGetUser();
+  };
+  const monitor = monitorRecoverySession(fake.auth, () => order.push("cleanup"));
+  await monitor.validate();
+  assert.deepEqual(order, ["getUser", "cleanup"]);
+  monitor.stop();
 });
 
 test("password mismatch and minimum length are rejected", () => {
