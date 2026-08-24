@@ -2,10 +2,15 @@ export const MIN_PASSWORD_LENGTH = 6;
 
 type RecoveryAuth = {
   updateUser: (attributes: { password: string }) => Promise<{
-    error: { message?: string } | null;
+    error: { code?: string; message?: string } | null;
   }>;
   signOut: () => Promise<unknown>;
 };
+
+export type RecoveryUpdateResult =
+  | { status: "updated" }
+  | { status: "same_password" }
+  | { status: "error" };
 
 export type RecoveryLinkState = {
   hasRecoveryIntent: boolean;
@@ -108,14 +113,18 @@ export function validateNewPassword(password: string, confirmation: string): str
 export async function updateRecoveredPassword(
   auth: RecoveryAuth,
   password: string,
-): Promise<{ ok: true } | { ok: false }> {
+): Promise<RecoveryUpdateResult> {
   const { error } = await auth.updateUser({ password });
   if (error) {
-    return { ok: false };
+    return { status: error.code === "same_password" ? "same_password" : "error" };
   }
 
   // A recovery link creates a temporary browser session. The product flow returns
   // to Desktop, so do not leave the website automatically signed in.
   await auth.signOut();
-  return { ok: true };
+  return { status: "updated" };
+}
+
+export async function keepCurrentPassword(auth: Pick<RecoveryAuth, "signOut">) {
+  await auth.signOut();
 }

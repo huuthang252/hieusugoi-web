@@ -5,12 +5,13 @@ import { FormEvent, useEffect, useRef, useState } from "react";
 import { createImplicitRecoveryClient } from "@/lib/supabase-browser";
 import {
   inspectRecoveryUrl,
+  keepCurrentPassword,
   monitorRecoverySession,
   updateRecoveredPassword,
   validateNewPassword,
 } from "@/lib/password-recovery";
 
-type PageState = "checking" | "ready" | "invalid" | "expired" | "success";
+type PageState = "checking" | "ready" | "invalid" | "expired" | "success" | "kept";
 
 export default function ResetPasswordPage() {
   const [pageState, setPageState] = useState<PageState>("checking");
@@ -18,6 +19,7 @@ export default function ResetPasswordPage() {
   const [confirmation, setConfirmation] = useState("");
   const [message, setMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [samePassword, setSamePassword] = useState(false);
   const clientRef = useRef<ReturnType<typeof createImplicitRecoveryClient> | null>(null);
 
   useEffect(() => {
@@ -71,7 +73,11 @@ export default function ResetPasswordPage() {
     setMessage(null);
     try {
       const result = await updateRecoveredPassword(clientRef.current.auth, password);
-      if (!result.ok) {
+      if (result.status === "same_password") {
+        setSamePassword(true);
+        return;
+      }
+      if (result.status === "error") {
         setMessage(
           "Không thể cập nhật mật khẩu. Liên kết có thể đã hết hạn hoặc đã được sử dụng.",
         );
@@ -82,6 +88,22 @@ export default function ResetPasswordPage() {
       setPageState("success");
     } catch {
       setMessage("Lỗi kết nối. Vui lòng kiểm tra mạng và thử lại.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleKeepCurrentPassword = async () => {
+    if (!clientRef.current) return;
+    setLoading(true);
+    setMessage(null);
+    try {
+      await keepCurrentPassword(clientRef.current.auth);
+      setPassword("");
+      setConfirmation("");
+      setPageState("kept");
+    } catch {
+      setMessage("Could not finish the recovery session. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -109,7 +131,7 @@ export default function ResetPasswordPage() {
           </div>
         )}
 
-        {pageState === "ready" && (
+        {pageState === "ready" && !samePassword && (
           <form onSubmit={handleSubmit} className="mt-7 space-y-5">
             <label className="block space-y-2 text-sm text-slate-100">
               <span>Mật khẩu mới</span>
@@ -146,6 +168,39 @@ export default function ResetPasswordPage() {
           </form>
         )}
 
+        {pageState === "ready" && samePassword && (
+          <div className="mt-6 space-y-5">
+            <h2 className="text-xl font-semibold text-amber-300">Password Already Used</h2>
+            <p className="text-slate-300">
+              This password is the same as your current password.
+            </p>
+            {message && <p className="text-sm text-rose-300">{message}</p>}
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <button
+                type="button"
+                disabled={loading}
+                onClick={handleKeepCurrentPassword}
+                className="flex-1 rounded-full border border-cyan-300 px-5 py-3 font-semibold text-cyan-200 transition hover:bg-cyan-300/10 disabled:opacity-70"
+              >
+                Keep Current Password
+              </button>
+              <button
+                type="button"
+                disabled={loading}
+                onClick={() => {
+                  setPassword("");
+                  setConfirmation("");
+                  setMessage(null);
+                  setSamePassword(false);
+                }}
+                className="flex-1 rounded-full bg-cyan-300 px-5 py-3 font-semibold text-slate-950 transition hover:bg-cyan-200 disabled:opacity-70"
+              >
+                Choose Another Password
+              </button>
+            </div>
+          </div>
+        )}
+
         {pageState === "success" && (
           <div className="mt-6 space-y-4">
             <p className="font-medium text-emerald-300">
@@ -153,6 +208,17 @@ export default function ResetPasswordPage() {
             </p>
             <p className="text-slate-300">
               Bạn có thể quay lại Hieusugoi và đăng nhập bằng mật khẩu mới.
+            </p>
+          </div>
+        )}
+
+        {pageState === "kept" && (
+          <div className="mt-6 space-y-4">
+            <p className="font-medium text-emerald-300">
+              Your current password has been kept.
+            </p>
+            <p className="text-slate-300">
+              You can return to Hieusugoi and sign in with your existing password.
             </p>
           </div>
         )}

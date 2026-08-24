@@ -4,6 +4,7 @@ import test from "node:test";
 
 import {
   inspectRecoveryUrl,
+  keepCurrentPassword,
   monitorRecoverySession,
   updateRecoveredPassword,
   validateNewPassword,
@@ -153,7 +154,7 @@ test("successful recovery updates the password and signs out temporary session",
     },
   };
 
-  assert.deepEqual(await updateRecoveredPassword(auth, "new-secret"), { ok: true });
+  assert.deepEqual(await updateRecoveredPassword(auth, "new-secret"), { status: "updated" });
   assert.deepEqual(calls, [
     ["updateUser", { password: "new-secret" }],
     ["signOut"],
@@ -172,11 +173,40 @@ test("password update failures do not sign out or create a user", async () => {
     },
   };
 
-  assert.deepEqual(await updateRecoveredPassword(auth, "new-secret"), { ok: false });
+  assert.deepEqual(await updateRecoveredPassword(auth, "new-secret"), { status: "error" });
   assert.equal(signedOut, false);
   const page = readFileSync(
     new URL("../app/reset-password/page.tsx", import.meta.url),
     "utf8",
   );
   assert.doesNotMatch(page, /signUp\s*\(/);
+});
+
+test("Supabase same_password error receives dedicated UX result", async () => {
+  let signedOut = false;
+  const auth = {
+    async updateUser() {
+      return { error: { code: "same_password", message: "provider message" } };
+    },
+    async signOut() {
+      signedOut = true;
+    },
+  };
+  assert.deepEqual(
+    await updateRecoveredPassword(auth, "existing-secret"),
+    { status: "same_password" },
+  );
+  assert.equal(signedOut, false);
+});
+
+test("keeping current password signs out without mutating the user", async () => {
+  const calls = [];
+  const auth = {
+    async signOut() {
+      calls.push("signOut");
+    },
+  };
+  await keepCurrentPassword(auth);
+  assert.deepEqual(calls, ["signOut"]);
+  assert.equal("updateUser" in auth, false);
 });
